@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #282838;
+    max-width: 500px;
+}
+
+
+
+@media screen and (max-width:500px) {
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: inline;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+
+    .row i {
+        font-size: 2em;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 0 3px;
+    }
+
+    .search {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .name,
+    .logo {
+        padding: 0 10px;
+    }
+
+    form.search input {
+        padding: 10px;
+        font-size: 1rem;
+        float: left;
+        width: 85%;
+        height: 5vh;
+        border-radius: 8px;
+        color: gray;
+        border: none;
+    }
+
+    .submit-btn {
+        max-width: 100px;
+        padding: 10px;
+        font-size: 1rem;
+        float: left;
+        width: 10%;
+        height: 5vh;
+        border-radius: 8px;
+        background-color: #fcbb6a;
+        border: none;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        color: #fff;
+    }
+
+    nav small {
+        font-size: 1em;
+    }
+
+    nav li {
+        margin-left: .5em;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .col-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .col-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .col h1 {
+        padding: .5em .5em;
+    }
+}
