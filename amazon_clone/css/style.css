@@ -1,11 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 1rem;
     box-sizing: border-box;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
+    width: 100%;
     background-color: #282838;
     max-width: 500px;
 }
@@ -35,8 +37,8 @@ header {
     }
 
     .search {
+        width: 100%;
         display: flex;
-        justify-content: space-evenly;
     }
 
     .name,
@@ -45,26 +47,32 @@ header {
     }
 
     form.search input {
-        padding: 10px;
-        font-size: 1rem;
-        float: left;
+        min-width: 50%;
         width: 85%;
-        height: 5vh;
-        border-radius: 8px;
-        color: gray;
+        padding: 8px 11px;
+        margin: 0 7px;
         border: none;
+        overflow: auto;
+        color: #282838;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
     }
 
     .submit-btn {
-        max-width: 100px;
-        padding: 10px;
-        font-size: 1rem;
-        float: left;
-        width: 10%;
-        height: 5vh;
-        border-radius: 8px;
-        background-color: #fcbb6a;
-        border: none;
+        border: 0px;
+        background: none;
+        padding: 2px 5px;
+        background-color: #eaa346;
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        font-size: 2em;
+        margin-right: 5px;
+        float: right;
+    }
+
+    .submit-btn i {
+        color: #000000;
     }
 
     nav ul {
