@@ -109,4 +109,64 @@ header {
     .col h1 {
         padding: .5em .5em;
     }
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #282838;
+        overflow-x: hidden;
+        transition: .5s;
+        padding-top: 30px;
+    }
+
+    .sidebar-header {
+        margin: 5px 10px;
+    }
+
+    .sidebar .row-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 1em;
+    }
+
+    .sidebar .row-1 i {
+        font-size: 1.5em;
+    }
+
+    .sidebar h2 {
+        display: flex;
+        justify-content: flex-start;
+        margin: 5px 10px;
+        font-size: 1em;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: .9rem;
+        color: #eaa346;
+        display: block;
+        transition: .3s;
+    }
+
+    .sidebar .close-menu {
+        position: absolute;
+        color: #fff;
+        font-size: 1.5em;
+        margin: 0 210px;
+        border: none;
+    }
+
+    .close-menu {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2em;
+        margin-right: 1em;
+        margin-top: -3em;
+    }
 }
