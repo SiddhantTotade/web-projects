@@ -1,3 +1,4 @@
+// Sidebar Menu
 const openMenu = document.querySelector('.open-menu')
 const closeMenu = document.querySelector('.close-menu')
 const openMenuDesktop = document.querySelector('.open-menu-desktop')
@@ -20,7 +21,6 @@ closeMenuDesktop.addEventListener('click', () => {
 });
 
 // Media Query
-
 if (window.screen.width >= 400) {
     document.querySelector(".mobile").style.display = 'none'
     document.querySelector(".desktop").style.display = 'block'
@@ -30,17 +30,15 @@ else if (window.screen.width <= 400) {
     document.querySelector(".desktop").style.display = 'none'
 }
 
-// Dropdown
-
+// Dropdown Menu
 let dropdownBtn = document.querySelector(".dropdown-btn")
-let menuContent = document.querySelector(".menu")
+let menuContent = document.querySelector(".dropdown-menu")
 
-dropdownBtn.addEventListener('click', () => {
+dropdownBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menuContent.classList.toggle('show')
+});
 
-    if (menuContent.style.display === "") {
-        menuContent.style.display = "block"
-    }
-    else {
-        menuContent.style.display = ""
-    }
-})
+window.onclick = () => {
+    menuContent.classList.remove('show')
+}
