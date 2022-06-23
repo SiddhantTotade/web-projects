@@ -42,3 +42,22 @@ dropdownBtn.addEventListener('click', (e) => {
 window.onclick = () => {
     menuContent.classList.remove('show')
 }
+
+// Carousel
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    dots: false,
+    margin: 11.5,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: false
+});
+$('.play').on('click', function () {
+    owl.trigger('play.owl.autoplay', [5000])
+})
+$('.stop').on('click', function () {
+    owl.trigger('stop.owl.autoplay')
+})
