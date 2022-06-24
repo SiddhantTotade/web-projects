@@ -14,7 +14,7 @@ body {
 @media screen and (min-width:401px) {
     header {
         width: 100%;
-        background-color: #282838;
+        background-color: #1c2634;
     }
 
     nav {
@@ -27,7 +27,7 @@ body {
     }
 
     .sub-container {
-        background-color: #3e3e6c;
+        background-color: #21345e;
     }
 
     .logo {
@@ -283,13 +283,13 @@ body {
 
     .owl-nav .owl-prev {
         position: absolute;
-        left: 0;
+        left: -.1em;
         display: block;
     }
 
     .owl-nav .owl-next {
         position: absolute;
-        right: 0;
+        right: .1em;
         display: block;
     }
 
@@ -304,6 +304,20 @@ body {
     .owl-carousel button.owl-dot:hover {
         border: 2px solid rgb(255, 255, 255);
         background-color: transparent;
+    }
+
+    .blur {
+        filter: blur(36px);
+        z-index: 1;
+        padding: 5em 4em;
+        top: 93%;
+        left: 50%;
+        background: #dbf6ff;
+        opacity: 1;
+        width: 107em;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        margin: 2em 0;
     }
 }
 
