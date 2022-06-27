@@ -44,20 +44,42 @@ window.onclick = () => {
 }
 
 // Carousel
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items: 1,
-    loop: true,
-    nav: true,
-    dots: false,
-    margin: 11.5,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: false
-});
-$('.play').on('click', function () {
-    owl.trigger('play.owl.autoplay', [5000])
-})
-$('.stop').on('click', function () {
-    owl.trigger('stop.owl.autoplay')
+
+$(document).ready(() => {
+    let one = $('#carousel-1')
+    let two = $('#carousel-2')
+
+    one.owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 11.5,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false
+    });
+    $('.play').on('click', function () {
+        owl.trigger('play.owl.autoplay', [5000])
+    })
+    $('.stop').on('click', function () {
+        owl.trigger('stop.owl.autoplay')
+    })
+
+
+    two.owlCarousel({
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
 })

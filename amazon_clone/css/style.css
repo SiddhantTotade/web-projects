@@ -372,6 +372,15 @@ body {
         color: #000000;
     }
 
+    .vid{
+        display: grid;
+        align-content: center;
+    }
+
+    .vid video{
+        width: 100%;
+    }
+
     .card-product-img {
         /* background-color: #3e3e6c; */
         padding: auto;
@@ -389,6 +398,43 @@ body {
     .card-product-name span small {
         color: #000000;
         font-size: 11px;
+    }
+
+    .card-carousel-items {
+        display: flex;
+        background-color: red;
+        position: sticky;
+        width: 77.75%;
+        margin: auto;
+        margin-top: 22.25%;
+        overflow-x: scroll;
+    }
+
+    .card-carousel-items .item {
+        padding: 10px 0;
+    }
+
+    #carousel-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        width: 77.75%;
+        height: 33vh;
+        position: relative;
+        margin: auto;
+        margin-top: 27em;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    #carousel-2 img {
+        width: 100%;
+        /* background: #21345e; */
+        height: 26vh;
+        object-fit: none;
     }
 }
 
