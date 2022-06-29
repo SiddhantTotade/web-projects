@@ -49,6 +49,7 @@ $(document).ready(() => {
     let one = $('#carousel-1')
     let two = $('#carousel-2')
     let three = $('#carousel-3')
+    let four = $('#carousel-4')
 
     one.owlCarousel({
         items: 1,
@@ -85,6 +86,22 @@ $(document).ready(() => {
     })
 
     three.owlCarousel({
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
+
+    four.owlCarousel({
         nav: true,
         dots: false,
         responsive: {
