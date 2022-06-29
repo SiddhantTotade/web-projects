@@ -12,6 +12,48 @@ body {
 
 /* Media Query for Desktop */
 @media screen and (min-width:401px) {
+
+    /* Testing Grid */
+    .grid-container {
+        display: grid;
+        width: 78%;
+        grid-gap: 1em;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%);
+    }
+
+    .grid-container>div {
+        background-color: rgb(255, 255, 255);
+        font-size: 20px;
+        height: 40vh;
+        overflow: auto;
+    }
+
+    .item1 {
+        grid-column: 0 / span 4;
+    }
+
+    .item5 {
+        grid-column: 1 / span 2;
+    }
+
+    .item8 {
+        grid-column: 1 / span 4;
+    }
+
+    .item9 {
+        grid-column: 1 / span 4;
+    }
+
+    .item14 {
+        grid-column: 1 / span 4;
+    }
+
+    /* Testing Grid */
+
+
     header {
         width: 100%;
         background-color: #1c2634;
@@ -350,13 +392,13 @@ body {
     .card-images {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 10px;
-        column-gap: 20px;
-        height: 250px;
+        column-gap: 3em;
+        height: 13em;
     }
 
     .card-title h3 {
         color: #000000;
+        font-size: 21px;
     }
 
     .app {
@@ -383,7 +425,9 @@ body {
     }
 
     .card-images img {
-        width: 8em;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .card-product-name {
@@ -434,19 +478,24 @@ body {
     .offer {
         display: flex;
         justify-content: center;
+        padding-top: 2em;
     }
 
-    #carousel-2 h4 {
+    #carousel-2 h4,
+    #carousel-4 h4 {
         display: flex;
         justify-content: center;
         color: #fff;
         padding: 4px 4px;
         background-color: rgb(255, 0, 85);
+        font-size: 15px;
     }
 
-    #carousel-2 h5 {
+    #carousel-2 h5,
+    #carousel-4 h5 {
         color: rgb(255 0 85);
         padding: 5px 5px;
+        font-size: 11px;
     }
 
     .carousel-product-1 #carousel2 .owl-nav {
@@ -498,27 +547,29 @@ body {
         object-fit: scale-down;
     }
 
-    .carousel-product-2 #carousel-3 .owl-nav {
+    #carousel .owl-nav {
         position: absolute;
-        top: 50px;
+        top: 55px;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
     }
 
-    .carousel-product-2 #carousel-3 .owl-nav button {
+    #carousel .owl-nav button {
+        font-size: 4em;
+        background: #ffffff;
         align-items: center;
-        background-color: #efeff9;
-        height: 14vh;
-        width: 3%;
-        opacity: .7;
+        height: 15vh;
+        width: 4%;
+        opacity: 0.7;
+        border-radius: 5px;
     }
 
-    .carousel-product-2 #carousel-3 .owl-nav button span {
+    #carousel .owl-nav button span {
         color: #000000;
     }
 
-    .carousel-product-2 #carousel-3 .owl-nav button:hover {
+    #carousel .owl-nav button:hover {
         color: #000000;
         border: 2px solid #1c2634;
     }
@@ -534,7 +585,7 @@ body {
     }
 
     .card-images .big {
-        width: 20em;
+        width: 16em;
     }
 
     .carousel-product-3 {
@@ -554,9 +605,10 @@ body {
     }
 
     #carousel-4 img {
+        margin-top: 5em;
         width: 100%;
-        height: 26vh;
-        object-fit: scale-down;
+        height: 25vh;
+        object-fit: contain;
     }
 
     .carousel-product-3 #carousel-4 .owl-nav {
@@ -588,9 +640,9 @@ body {
         display: flex;
         justify-content: space-evenly;
         margin-top: 2em;
+        margin-top: 110%;
         height: 30vh;
         background-color: #050d22;
-        ;
     }
 
     .footer-content-box {
