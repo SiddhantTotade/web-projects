@@ -44,7 +44,6 @@ window.onclick = () => {
 }
 
 // Carousel
-
 $(document).ready(() => {
     let one = $('#carousel-1')
     let two = $('#carousel-2')
