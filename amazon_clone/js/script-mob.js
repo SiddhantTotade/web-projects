@@ -12,12 +12,10 @@ closeMenu.addEventListener('click', () => {
 $(document).ready(() => {
     let carouselMob = $('#carousel-mobile')
 
-    console.log("Running");
-
     carouselMob.owlCarousel({
         items: 1,
         loop: true,
-        // nav: true,
+        nav: false,
         dots: true,
         margin: 0,
         autoplay: true,

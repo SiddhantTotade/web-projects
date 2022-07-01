@@ -984,6 +984,7 @@ body {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         overflow: auto;
+        margin-top: 10px;
         gap: 10px;
     }
 
@@ -1001,8 +1002,61 @@ body {
 
     .item-cards-grid {
         width: 100%;
-        background: red;
+        background: #fff;
         height: 50vh;
         margin: auto;
+    }
+
+    .item-cards-grid span small {
+        position: absolute;
+        padding: 10px 10px;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    #item-grid-animation {
+        animation: images-animation 12s;
+        animation-iteration-count: infinite;
+        background-position: 50% 30%;
+        background-size: 10em 12em;
+    }
+
+    @keyframes images-animation {
+        0% {
+            background-image: url('../img/grid-animation/grid-animation-1.jpg');
+            background-repeat: no-repeat;
+        }
+
+        25% {
+            background-image: url('../img/grid-animation/grid-animation-2.jpg');
+            background-repeat: no-repeat;
+        }
+
+        50% {
+            background-image: url('../img/grid-animation/grid-animation-3.jpeg');
+            background-repeat: no-repeat;
+        }
+
+        75% {
+            background-image: url('../img/grid-animation/grid-animation-4.jpeg');
+            background-repeat: no-repeat;
+        }
+
+        100% {
+            background-image: url('../img/grid-animation/grid-animation-5.jpg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    .sub-card-item {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    .sub-card-item img {
+        width: 70%;
+        margin: 10px;
+        margin-top: 16em;
     }
 }
