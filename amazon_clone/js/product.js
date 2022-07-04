@@ -33,13 +33,14 @@ closeMenuDesktop.addEventListener('click', () => {
     document.querySelector('.sidebar-desktop').style.width = "0";
 });
 
+
 $(function () {
     $(".xzoom,.xzoom-gallery").xzoom({
-        zoomWidth: 600,
-        // width:"700px",
-        // height:"900em",
-        zoomHeight: 600,
+        zoomWidth: 500,
+        // width:"100px",
+        // height:"100vh",
+        zoomHeight: 500,
         tint: "#331",
-        Xoffset: 80,
+        Xoffset: 50,
     })
 });
