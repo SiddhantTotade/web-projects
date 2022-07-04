@@ -326,6 +326,7 @@ body {
 
     .product-img {
         border: 2px solid red;
+        display: grid;
     }
 
     .big-img {
@@ -371,6 +372,8 @@ body {
 
     .product-about {
         border: 2px solid red;
+        display: grid;
+        justify-items: center;
     }
 
     .product-name {
@@ -463,5 +466,156 @@ body {
 
     .product-description-img img {
         width: 100%;
+    }
+
+    .product-title {
+        display: grid;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .product-subtitle {
+        display: grid;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .product-detail-table {
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px 10px;
+        gap: 1em;
+    }
+
+    .product-detail-table strong {
+        padding: 10px;
+        padding-right: 40px;
+    }
+
+    td,
+    th {
+        border: none;
+    }
+
+    .review {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+        gap: 10px;
+        padding: 20px 10px;
+    }
+
+    .review-left {
+        display: grid;
+        gap: 10px;
+        border: 2px solid brown;
+    }
+
+    .stars {
+        width: 25%;
+        height: 2vh;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border: 2px solid orange;
+    }
+
+    .star {
+        width: 15%;
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    .review-right {
+        display: grid;
+        gap: 10px;
+        border: 2px solid violet;
+    }
+
+    .bars {
+        border: 2px solid chocolate;
+    }
+
+    .bar {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .review-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+        height: 3vh;
+        background: #c8d1d1;
+        margin: 0px 33px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    .fill-5 {
+        width: 170%;
+        background-color: orange;
+    }
+
+    .fill-4 {
+        width: 143%;
+        background-color: orange;
+    }
+
+    .fill-3 {
+        width: 95%;
+        background-color: orange;
+    }
+
+    .fill-2 {
+        width: 70%;
+        background-color: orange;
+    }
+
+    .fill-1 {
+        width: 20%;
+        background-color: orange;
+    }
+
+    .fill {
+        border-radius: 5px;
+    }
+
+    .review-right {
+        display: grid;
+    }
+
+    .review-container {
+        display: grid;
+        margin-top: 25px;
+        gap: 1em;
+        border: 2px solid yellow;
+    }
+
+    .user {
+        margin: 0;
+        border: 2px solid black;
+    }
+
+    .user i {
+        background-color: #282838;
+        border-radius: 30px;
+        font-size: 2em;
+    }
+
+    .user-star {
+        display: flex;
+        border: 2px solid black;
+    }
+
+    .user-star strong {
+        padding: 0 10px;
+    }
+
+    .user strong {
+        padding: 0 10px;
     }
 }
