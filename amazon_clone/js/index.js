@@ -24,10 +24,20 @@ closeMenuDesktop.addEventListener('click', () => {
 if (window.screen.width >= 400) {
     document.querySelector(".mobile").style.display = 'none'
     document.querySelector(".desktop").style.display = 'block'
+    document.querySelector(".item-types").style.display = 'none'
+    document.querySelector(".carousel-main-mob").style.display = 'none'
+    document.querySelector(".card-carousel").style.display = 'none'
+    document.querySelector(".upper").style.display = 'none'
+    document.querySelector(".lower").style.display = 'none'
 }
 else if (window.screen.width <= 400) {
     document.querySelector(".mobile").style.display = 'block'
     document.querySelector(".desktop").style.display = 'none'
+    document.querySelector(".main").style.display = 'none'
+    document.querySelector(".grid-container").style.display = 'none'
+    document.querySelector(".upper-desk").style.display = 'none'
+    document.querySelector(".middle-desk").style.display = 'none'
+    document.querySelector(".lower-desk").style.display = 'none'
 }
 
 // Dropdown Menu
@@ -42,6 +52,23 @@ dropdownBtn.addEventListener('click', (e) => {
 window.onclick = () => {
     menuContent.classList.remove('show')
 }
+
+// Carousel Mobile
+$(document).ready(() => {
+    let carouselMob = $('#carousel-mobile')
+
+    carouselMob.owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
+        dots: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false
+    });
+})
+
 
 // Carousel
 $(document).ready(() => {

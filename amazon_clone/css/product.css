@@ -124,7 +124,7 @@ body {
         margin: 5px 10px;
     }
 
-    .user {
+    .user-desk {
         display: flex;
         align-items: center;
         margin: 1em;
@@ -660,6 +660,7 @@ body {
 
     .middle-desk img {
         width: 10%;
+        margin: 20px 0;
     }
 
     .footer-img {
@@ -692,7 +693,7 @@ body {
 
     .copyright {
         display: grid;
-        margin: 2em;
+        margin: 3em;
         justify-content: center;
     }
 }
