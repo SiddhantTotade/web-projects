@@ -25,6 +25,20 @@ const closeMenuDesktop = document.querySelector('.close-menu-desktop')
 ///////     document.querySelector('.sidebar').style.width = "0";
 /////// });
 
+if (window.screen.width >= 400) {
+    document.querySelector(".mobile").style.display = 'none'
+    document.querySelector(".desktop").style.display = 'block'
+}
+else if (window.screen.width <= 400) {
+    document.querySelector(".mobile").style.display = 'block'
+    document.querySelector(".desktop").style.display = 'none'
+    document.querySelector(".product").style.display = 'none'
+    document.querySelector(".upper-footer").style.display = 'none'
+    document.querySelector(".middle-footer").style.display = 'none'
+    document.querySelector(".lower-footer").style.display = 'none'
+    document.querySelector(".copyright").style.display = 'none'
+}
+
 openMenuDesktop.addEventListener('click', () => {
     document.querySelector('.sidebar-desktop').style.width = "350px";
 });
@@ -44,3 +58,23 @@ $(function () {
         Xoffset: 50,
     })
 });
+
+
+// Product Carousel
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    // nav: true,
+    dots: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+})
