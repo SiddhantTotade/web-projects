@@ -36,23 +36,24 @@ window.onclick = () => {
 if (window.screen.width >= 400) {
     document.querySelector(".mobile").style.display = 'none'
     document.querySelector(".desktop").style.display = 'block'
+    document.querySelector(".product-mob").style.display = 'none'
+    document.querySelector(".upper").style.display = 'none'
+    document.querySelector(".lower").style.display = 'none'
 }
 else if (window.screen.width <= 400) {
     document.querySelector(".mobile").style.display = 'block'
     document.querySelector(".desktop").style.display = 'none'
     document.querySelector(".product").style.display = 'none'
-    document.querySelector(".upper-footer").style.display = 'none'
-    document.querySelector(".middle-footer").style.display = 'none'
-    document.querySelector(".lower-footer").style.display = 'none'
+    document.querySelector(".upper-desk").style.display = 'none'
+    document.querySelector(".middle-desk").style.display = 'none'
+    document.querySelector(".lower-desk").style.display = 'none'
     document.querySelector(".copyright").style.display = 'none'
 }
 
-
+// Product Zoom
 $(function () {
     $(".xzoom,.xzoom-gallery").xzoom({
         zoomWidth: 500,
-        // width:"100px",
-        // height:"100vh",
         zoomHeight: 500,
         tint: "#331",
         Xoffset: 50,
@@ -64,7 +65,6 @@ $(function () {
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 0,
-    // nav: true,
     dots: true,
     responsive: {
         0: {
