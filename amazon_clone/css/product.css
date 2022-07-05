@@ -1033,6 +1033,11 @@ body {
         padding: 5px;
     }
 
+    .details-small {
+        display: grid;
+        overflow: hidden;
+    }
+
     .details-img-container {
         display: grid;
     }
