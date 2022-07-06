@@ -44,6 +44,14 @@ window.onclick = function (event) {
     }
 }
 
-// State Dropdown
-// window.onclick = function (event) {
-// }
+// Media Query
+if (window.screen.width >= 400) {
+    document.querySelector(".mobile").style.display = 'none'
+}
+else if (window.screen.width <= 400) {
+    document.querySelector(".header-mob").style.display = 'block'
+    document.querySelector(".address-container").style.display = 'none'
+    document.querySelector(".upper-desk").style.display = 'none'
+    document.querySelector(".middle-desk").style.display = 'none'
+    document.querySelector(".lower-desk").style.display = 'none'
+}
