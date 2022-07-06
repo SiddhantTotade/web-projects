@@ -21,6 +21,11 @@ body {
 
 @media screen and (min-width:401px) {
 
+    .address-container {
+        width: 80%;
+        margin: auto;
+    }
+
     .address {
         width: 80%;
         padding-top: 20px;
