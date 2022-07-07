@@ -46,7 +46,8 @@ window.onclick = function (event) {
 
 // Media Query
 if (window.screen.width >= 400) {
-    document.querySelector(".mobile").style.display = 'none'
+    document.querySelector('.header-mob').style.display = 'none'
+    document.querySelector('.delivery-footer').style.display = 'none'
 }
 else if (window.screen.width <= 400) {
     document.querySelector(".header-mob").style.display = 'block'

@@ -315,7 +315,7 @@ body {
         width: 100%;
         height: 5vh;
         padding: 0 10px;
-        background-color: #131A22;
+        background-color: #232F3E;
     }
 
     .logo img {
@@ -332,22 +332,30 @@ body {
 
     .address-container {
         padding: 0 10px;
-        border: 2px solid red;
+    }
+
+    .address-title {
+        padding: 20px 0;
+    }
+
+    .address-container h5,
+    .address-container h4,
+    .address-container h2,
+    .address-container p {
+        color: #000000;
     }
 
     .address-box {
         display: flex;
         align-items: center;
         justify-items: center;
+        padding: 20px 0;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        border: 2px solid black;
-        background-color: black;
     }
 
     .radio-btn {
         width: 10%;
-        border: 2px solid green;
     }
 
     .radio-btn input {
@@ -359,25 +367,84 @@ body {
         display: grid;
         width: 100%;
         gap: 10px;
-        border: 2px solid blue;
     }
 
     .delivery-buttons {
         width: 80%;
         margin: auto;
         display: grid;
+        margin-top: 10px;
         gap: 10px;
-        border: 2px solid aqua;
     }
 
     .delivery {
         display: grid;
-        justify-content: center;
-        border: 3px solid darkorange;
+    }
+
+    .deliver {
+        background-color: yellow;
+        color: #000000;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .edit {
+        background-color: #fff;
+        border-radius: 5px;
+        color: #000000;
+        border: 1px solid gray;
     }
 
     .delivery-btn {
         width: 100%;
         padding: 7px 70px;
+    }
+
+    .new-address {
+        display: grid;
+        gap: 10px;
+    }
+
+    .new-address h3,
+    .new-address i {
+        color: #000000;
+    }
+
+    .add-address {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5vh;
+        margin-top: 20px;
+        padding: 0 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+
+    .pickup-location {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5vh;
+        padding: 0 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+
+    .delivery-footer {
+        margin-top: 20px;
+        background-color: #131A22;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 0;
+    }
+
+    .copyrights {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0;
     }
 }
