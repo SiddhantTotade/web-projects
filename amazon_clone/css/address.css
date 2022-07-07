@@ -29,8 +29,10 @@ body {
     .address {
         width: 80%;
         padding-top: 20px;
+        padding-bottom: 1em;
         background-color: #fff;
         margin: auto;
+        border-bottom: 1px solid gainsboro;
     }
 
     .address h1,
