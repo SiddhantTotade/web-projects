@@ -280,6 +280,10 @@ body {
         justify-content: space-evenly;
     }
 
+    .cart-title h1 {
+        padding: 15px 0;
+    }
+
     .cart-container h1,
     .cart-container h3,
     .cart-container h4,
@@ -301,6 +305,9 @@ body {
         display: grid;
         justify-content: flex-end;
         padding-right: 70px;
+        border-bottom: 1px solid gainsboro;
+        border-top: 1px solid gainsboro;
+        padding: 10px 70px;
     }
 
     .cart-product-content {
@@ -308,6 +315,8 @@ body {
         align-items: center;
         justify-content: flex-start;
         gap: 70px;
+        border-bottom: 1px solid gainsboro;
+        padding: 20px 0;
     }
 
     .cart-product-content input {
