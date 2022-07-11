@@ -761,6 +761,9 @@ body {
 
     .product-counter .incr,
     .product-counter .decr {
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
         color: #000000;
         width: 10%;
     }
