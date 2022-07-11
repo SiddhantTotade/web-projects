@@ -1,14 +1,34 @@
+// Sidebar
+// const openMenu = document.querySelector('.open-menu')
+// const closeMenu = document.querySelector('.close-menu')
+// const openMenuDesktop = document.querySelector('.open-menu-desktop')
+// const closeMenuDesktop = document.querySelector('.close-menu-desktop')
+
+// openMenu.addEventListener('click', () => {
+//     document.querySelector('.sidebar').style.width = "250px";
+// });
+
+// closeMenu.addEventListener('click', () => {
+//     document.querySelector('.sidebar').style.width = "0";
+// });
+
+// openMenuDesktop.addEventListener('click', () => {
+//     document.querySelector('.sidebar-desktop').style.width = "350px";
+// });
+
+// closeMenuDesktop.addEventListener('click', () => {
+//     document.querySelector('.sidebar-desktop').style.width = "0";
+// });
+
 // Product Counter
 const counter = document.querySelectorAll('.product-counter');
 
 counter.forEach((node) => {
     let i = 1
-    let j = 0
     const itemCount = node.querySelector('.counter')
     const incr = node.querySelector('.incr')
     const decr = node.querySelector('.decr')
     const del = node.querySelector('.delete')
-    const content = document.querySelector('.cart-product-content')
 
     incr.addEventListener('click', () => {
         i++;
@@ -22,6 +42,20 @@ counter.forEach((node) => {
     })
     del.addEventListener('click', () => {
         del.parentElement.parentElement.parentElement.remove()
-        // document.querySelector('.cart-product-content').parentElement.remove()
     })
 })
+
+// Media Query
+if (window.screen.width >= 400) {
+    document.querySelector(".mobile").style.display = 'none'
+    document.querySelector(".upper").style.display = 'none'
+    document.querySelector(".lower").style.display = 'none'
+}
+else if (window.screen.width <= 400) {
+    document.querySelector(".mobile").style.display = 'block'
+    document.querySelector(".desktop").style.display = 'none'
+    document.querySelector(".cart-container").style.display = 'none'
+    document.querySelector(".upper-desk").style.display = 'none'
+    document.querySelector(".middle-desk").style.display = 'none'
+    document.querySelector(".lower-desk").style.display = 'none'
+}
