@@ -684,13 +684,33 @@ body {
         padding: 0 5px;
     }
 
-    .cart-container {
-        background-color: #000000;
+    .cart-container-mob {
+        padding: 20px 10px;
+    }
+
+    .cart-container-mob h2,
+    .cart-container-mob h4 {
+        color: #000000;
+    }
+
+    .cart-container-mob i {
+        font-size: 25px;
+        color: #009905;
+    }
+
+    .cart-container-mob small {
+        color: #009905;
     }
 
     .total {
         display: grid;
         gap: 15px;
+    }
+
+    .proceed {
+        display: flex;
+        gap: 10px;
+        align-items: center;
     }
 
     .proceed-btn {
@@ -746,9 +766,55 @@ body {
     }
 
     .delete {
-        color: #fff;
+        color: #007cfb;
         background: none;
         border: none;
         width: 30%;
+    }
+
+    .upper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 2em;
+        padding: 30px 10px;
+        background-color: #232F3E;
+    }
+
+    .col-1 {
+        display: grid;
+        gap: 1em;
+    }
+
+    .col-2 {
+        display: grid;
+        gap: 1em;
+    }
+
+    .col-1 small,
+    .col-2 small {
+        font-size: 15px;
+    }
+
+    .lower {
+        display: grid;
+        justify-items: center;
+        background-color: #000b1a;
+        gap: 1em;
+    }
+
+    .globe {
+        display: flex;
+        justify-content: center;
+        padding: 0 10px;
+        padding-top: 1em;
+    }
+
+    .globe small {
+        padding: 0 10px;
+    }
+
+    .rights {
+        margin-bottom: 1em;
     }
 }
