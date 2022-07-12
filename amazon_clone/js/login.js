@@ -9,8 +9,6 @@ else if (window.screen.width <= 400) {
 
 // Login and Create
 document.getElementById('user').style.display = 'none'
-// let signin = document.getElementById('signin').checked = true;
-// let create = document.getElementById('create').checked = false;
 
 document.getElementById('signin').addEventListener('click', () => {
     signin.checked = true
