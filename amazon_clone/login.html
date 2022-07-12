@@ -6,37 +6,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Clone | Login</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
-    <div class="amazon-logo">
-        <img src="./img/amazon-black.png" alt="">
-        <h4>.in</h4>
-    </div>
-    <div class="login-container">
-        <div class="signin-container">
-            <div class="sign-in-title">
-                <h1>Sign-In</h1>
+    <!-- Login for Desktop -->
+    <div class="login-desktop">
+        <div class="amazon-logo">
+            <img src="./img/amazon-black.png" alt="">
+            <h4>.in</h4>
+        </div>
+        <div class="login-container">
+            <div class="signin-container">
+                <div class="sign-in-title">
+                    <h1>Sign-In</h1>
+                </div>
+                <div class="user-login">
+                    <small>
+                        <h4>Email or mobile phone number</h4>
+                    </small>
+                    <input type="text" name="" id="">
+                    <button>Continue</button>
+                </div>
             </div>
-            <div class="user-login">
-                <small>
-                    <h4>Email or mobile phone number</h4>
-                </small>
-                <input type="text" name="" id="">
-                <button>Continue</button>
+            <div class="continue user-login">
+                <small>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</small>
             </div>
         </div>
-        <div class="continue user-login">
-            <small>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</small>
+        <div class="new-amazon user-login">
+            <small>New to Amazon ?</small>
+        </div>
+        <div class="create-account">
+            <button>Create your Amazon account</button>
         </div>
     </div>
-    <div class="new-amazon user-login">
-        <small>New to Amazon ?</small>
+
+    <!-- Login for Mobile -->
+    <div class="login-mobile">
+        <div class="logo">
+            <img src="./img/amazon-logo.png" alt="">
+            <h5>.in</h5>
+        </div>
+        <div class="login-container">
+            <div class="welcome-title">
+                <h1>Welcome</h1>
+            </div>
+            <div class="login-create">
+                <div class="create">
+                    <div class="login">
+                        <input type="radio">
+                        <h3>Create account.</h3><small>New to Amazon?</small>
+                    </div>
+                    <div class="user-details">
+                        <input type="text" placeholder="First and last name">
+                        <input type="tel" placeholder="Mobile number">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Set password">
+                        <div class="password">
+                            <i class="uil uil-info"></i>
+                            <small>Passwords must be at least 6 characters.</small>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div class="show-password">
+                            <input type="checkbox">
+                            <h4>Show password</h4>
+                        </div>
+                        <div class="confirm">
+                            <small>By enrolling your mobile phone number, you consent to receiving automated security
+                                notifications via text message from Amazon. You can opt out by removing your mobile
+                                number
+                                on the Login & Security page located in Your Account settings. Message and data rates
+                                may
+                                apply.
+                            </small>
+                        </div>
+                        <button>Verify mobile number</button>
+                    </div>
+                </div>
+                <div class="login-user">
+                    <div class="login">
+                        <input type="radio">
+                        <h3>Sign-In.</h3><small>Already a customer?</small>
+                    </div>
+                    <div class="email">
+                        <input type="text" placeholder="Email or phone number">
+                        <button>Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="create-account">
-        <button>Create your Amazon account</button>
-    </div>
+    <footer class="delivery-footer">
+        <div class="footer-content">
+            <small>Conditions of Use</small>
+            <small>Privacy Notice</small>
+            <small>Interest-Based Ads</small>
+        </div>
+        <div class="copyrights">
+            <small>&copy;All rights reserved by Siddhat Totade</small>
+        </div>
+    </footer>
 </body>
+<script src="./js/login.js"></script>
 
 </html>
