@@ -69,7 +69,7 @@ body {
 
     .user-login button,
     .user-login input {
-        height: 3vh;
+        height: 4vh;
         border: 2px solid gainsboro;
         border-radius: 5px;
         color: #000000;
@@ -116,7 +116,7 @@ body {
 
     .create-account button {
         width: 90%;
-        height: 3vh;
+        height: 4vh;
         border-radius: 5px;
         border: 1px solid grey;
         color: #000000;
