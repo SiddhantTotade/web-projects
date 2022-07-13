@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone | Products</title>
+    <link rel="stylesheet" href="./css/product-list.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Product-list for Desktop -->
+    <header class="desktop">
+        <nav class="container">
+            <!-- Div 1 - Logo -->
+            <div class="logo">
+                <img class="amazon-logo" src="./img/amazon-logo.png" alt="">
+                <span>.in</span>
+            </div>
+            <!-- Div 2 - Address -->
+            <div class="address-container">
+                <i class="uil uil-location-point location-icon"></i>
+                <div class="address">
+                    <span><small>Deliver to Siddhant</small></span>
+                    <h4>Raipur 492009</h4>
+                </div>
+            </div>
+            <!-- Div 3 - Sidebar Desktop -->
+            <div class="sidebar-desktop">
+                <div class="close-and-user close">
+                    <i class="uil uil-multiply close-menu-desktop"></i>
+                    <div class="user">
+                        <i class="uil uil-user user-desktop"></i>
+                        <h2>Hello, Siddhant</h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="row-1 row">
+                    <h2>Trending</h2>
+                    <div class="menu">
+                        <a href="#">Best Sellers</a>
+                        <a href="#">New Release</a>
+                        <a href="#">Movers and Shakers</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row-2 row">
+                    <h2>Digital Content & Devices</h2>
+                    <div class="menu">
+                        <a href="#">Echo Alexa</a>
+                        <a href="#">Fire TV</a>
+                        <a href="#">Kindle E-Reaaders & eBooks</a>
+                        <a href="#">Audible AudioBooks</a>
+                        <a href="#">Amazon Prime Video</a>
+                        <a href="#">Amazon Prime Music</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row-3 row">
+                    <h2>Shop by Department</h2>
+                    <div class="menu">
+                        <a href="#">Mobiles, Computers</a>
+                        <a href="#">TV, Appliences, Electronics</a>
+                        <a href="#">Men's Fashion</a>
+                        <a href="#">Women's Fashion</a>
+                        <a href="#">See All</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row-4 row">
+                    <h2>Programs & Features</h2>
+                    <div class="menu">
+                        <a href="#">Gift Cards & Mobile Recharges</a>
+                        <a href="#">Flight Tickets</a>
+                        <a href="#">#FoundItOnAmazon</a>
+                        <a href="#">Clearencs Store</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row-5 row">
+                    <h2>Help & Settings</h2>
+                    <div class="menu">
+                        <a href="#">Your Account</a>
+                        <a href="#">Customer Service</a>
+                        <a href="#">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Div 4 - Dropdown -->
+            <div class="dropdown">
+                <button class="dropdown-btn">
+                    All <i class="uil uil-angle-down"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <li><a href="#">All Categories</a></li>
+                    <li><a href="#">Alexa Devices</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Computers & Accessories</a></li>
+                    <li><a href="#">Cloths</a></li>
+                    <li><a href="#">Collectibles</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Software</a></li>
+                    <li><a href="#">Sports, Fitness & Outdoors</a></li>
+                    <li><a href="#">Shoe & Handbags</a></li>
+                    <li><a href="#">Toys and Games</a></li>
+                    <li><a href="#">Watches</a></li>
+                </div>
+            </div>
+            <!-- Div 5 - Search & Search Button -->
+            <form class="search">
+                <input type="text" class="search-bar">
+                <button class="search-btn"><i class="uil uil-search"></i></button>
+            </form>
+            <!-- Div 6 - Flag -->
+            <div class="flag">
+                <img class="india-flag" src="./img/india.png" alt="">
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <!-- Div 7 - Account -->
+            <div class="account">
+                <span><small>Hello, Siddhant</small></span>
+                <div class="account-down">
+                    <h4>Account & Lists</h4>
+                    <i class="uil uil-angle-down account-icon"></i>
+                </div>
+            </div>
+            <!-- Div 8 - Order -->
+            <div class="order">
+                <span><small>Return</small></span>
+                <h4>& Orders</h4>
+            </div>
+            <!-- Div 9  - Cart -->
+            <div class="cart">
+                <i class="uil uil-shopping-cart cart-item"></i>
+            </div>
+        </nav>
+        <!-- sub Container Div -->
+        <div class="sub-container">
+            <nav class="sub-nav">
+                <div class="col open-menu-desktop">
+                    <i class="uil uil-bars menu-icon open-menu"></i>
+                    <strong>
+                        <h3>All</h3>
+                    </strong>
+                </div>
+                <div class="col">
+                    <strong>Fresh</strong>
+                </div>
+                <div class="col">
+                    <strong>Mobiles</strong>
+                </div>
+                <div class="col">
+                    <strong>Amazon Pay</strong>
+                </div>
+                <div class="col">
+                    <strong>Buy Again</strong>
+                </div>
+                <div class="col">
+                    <strong>New Release</strong>
+                </div>
+                <div class="col">
+                    <strong>Gift Ideas</strong>
+                </div>
+                <div class="col">
+                    <strong>Health, Household & Personal Care</strong>
+                </div>
+                <div class="col">
+                    <strong>Amazon Basics</strong>
+                </div>
+                <div class="col">
+                    <strong>Home Improvements</strong>
+                </div>
+                <div class="col">
+                    <strong>Coupons</strong>
+                </div>
+                <div class="col">
+                    <strong>Sports, Fitness & Outdoors</strong>
+                </div>
+                <div class="col">
+                    <strong>Gift Card</strong>
+                </div>
+                <div class="col">
+                    <strong>Baby</strong>
+                </div>
+                <div class="col">
+                    <strong>Browsing History</strong>
+                    <i class="uil uil-angle-down history-icon"></i>
+                </div>
+                <div class="col">
+                    <strong>Today's Deals</strong>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="product-list-container page-1">
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/product-list/product-list-1.jpg" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-name-desc">
+                    <h3>
+                        Samsung Galaxy M33 5G (Emerald Brown, 8GB, 128GB Storage) | 5nm Processor | 6000mAh Battery |
+                        Voice
+                        Focus | Upto 16GB RAM with RAM Plus | Travel Adapter to be Purchased Separately
+                    </h3>
+                    <div class="stars">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <small>Limited time deal</small>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h3>₹ 19,499</h3>
+                    <small>FREE Delivery by Amazon</small>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/product-list/product-list-2.jpg" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-name-desc">
+                    <h3>
+                        Samsung Galaxy M32 (Light Blue, 6GB RAM, 128GB | FHD+ sAMOLED 90Hz Display | 6000mAh Battery |
+                        64MP Quad Camera
+                    </h3>
+                    <div class="stars">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <small>Limited time deal</small>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h3>₹ 16,999</h3>
+                    <small>FREE Delivery by Amazon</small>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/product-list/product-list-3.jpg" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-name-desc">
+                    <h3>
+                        Redmi 9A Sport (Coral Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000
+                        mAh Battery
+                    </h3>
+                    <div class="stars">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <small>Limited time deal</small>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h3>₹ 6,499</h3>
+                    <small>FREE Delivery by Amazon</small>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/product-list/product-list-4.jpg" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-name-desc">
+                    <h3>
+                        Redmi 9 Activ (Coral Green, 4GB RAM, 64GB Storage)
+                    </h3>
+                    <div class="stars">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <small>Limited time deal</small>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h3>₹ 8,499</h3>
+                    <small>FREE Delivery by Amazon</small>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/product-list/product-list-5.jpg" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-name-desc">
+                    <h3>
+                        OPPO A31 (Mystery Black, 6GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers
+                    </h3>
+                    <div class="stars">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <small>Limited time deal</small>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h3>₹ 11,990</h3>
+                    <small>FREE Delivery by Amazon</small>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href=""><i class="uil uil-angle-left-b prev"></i></a>
+            <a href="" id="one">1</a>
+            <a href="#" id="two">2</a>
+            <a href="#"><i class="uil uil-angle-right-b next"></i></a>
+        </div>
+    </div>
+    <div class="product-list-container page-2">
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/product-list/product-list-6.jpg" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-name-desc">
+                    <h3>
+                        Redmi Note 10T 5G (Metallic Blue, 4GB RAM, 64GB Storage) | Dual 5G | 90Hz Adaptive Refresh Rate
+                        | MediaTek Dimensity 700 7nm Processor | 22.5W Charger Included
+                    </h3>
+                    <div class="stars">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <small>Limited time deal</small>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h3>₹ 11,999</h3>
+                    <small>FREE Delivery by Amazon</small>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/product-list/product-list-7.jpg" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-name-desc">
+                    <h3>
+                        Samsung Galaxy M12 (Blue,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad
+                        Camera | 90Hz Refresh Rate
+                    </h3>
+                    <div class="stars">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <small>Limited time deal</small>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h3>₹ 10,499</h3>
+                    <small>FREE Delivery by Amazon</small>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/product-list/product-list-8.jpg" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-name-desc">
+                    <h3>
+                        vivo iQOO Z6 44W (Raven Black, 6GB RAM, 128GB Storage) | 44W FlashCharge + 5000mAh Battery |
+                        FHD+ AMOLED Display | in-Display Fingerprint
+                    </h3>
+                    <div class="stars">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <small>Limited time deal</small>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h3>₹ 15,999</h3>
+                    <small>FREE Delivery by Amazon</small>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/product-list/product-list-9.jpg" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-name-desc">
+                    <h3>
+                        Apple iPhone 12 (128GB) - Blue
+                    </h3>
+                    <div class="stars">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <small>Limited time deal</small>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h3>₹ 60,900</h3>
+                    <small>FREE Delivery by Amazon</small>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-img">
+                <img src="./img/product-list/product-list-10.jpg" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-name-desc">
+                    <h3>
+                        Samsung Galaxy M53 5G (Mystique Green, 8GB, 128GB Storage) | 108MP Camera | sAmoled+ 120Hz |
+                        32MP Front Camera | 6nm Processor | 16GB RAM with RAM Plus | Travel Adapter to be Purchased
+                        Separately
+                    </h3>
+                    <div class="stars">
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="star">
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                    </div>
+                    <div class="deal">
+                        <small>Limited time deal</small>
+                    </div>
+                </div>
+                <div class="product-price">
+                    <h3>₹ 28,499</h3>
+                    <small>FREE Delivery by Amazon</small>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href=""><i class="uil uil-angle-left-b prev"></i></a>
+            <a href="" id="one">1</a>
+            <a href="#" id="two">2</a>
+            <a href="#"><i class="uil uil-angle-right-b next"></i></a>
+        </div>
+    </div>
+</body>
+<script src="./js/product-list.js"></script>
+
+</html>
