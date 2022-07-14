@@ -1,5 +1,5 @@
 // Sidebar Menu
-const openMenu = document.querySelector('.open-menu')
+const openMenu = document.querySelector('#open-menu')
 const closeMenu = document.querySelector('.close-menu')
 const openMenuDesktop = document.querySelector('.open-menu-desktop')
 const closeMenuDesktop = document.querySelector('.close-menu-desktop')
@@ -28,7 +28,7 @@ if (window.screen.width >= 400) {
     document.querySelector(".lower").style.display = 'none'
 }
 else if (window.screen.width <= 400) {
-    document.querySelector(".product-list-container-mob").style.display = 'block'
+    document.querySelector(".product-list-container-mob").style.display = 'grid'
     document.querySelector(".desktop").style.display = 'none'
     document.querySelector(".page-1").style.display = 'none'
     document.querySelector(".page-2").style.display = 'none'
