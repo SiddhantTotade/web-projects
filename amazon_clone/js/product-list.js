@@ -22,8 +22,10 @@ closeMenuDesktop.addEventListener('click', () => {
 
 // Media Query
 if (window.screen.width >= 400) {
-    document.querySelector(".desktop").style.display = 'block'
-    document.querySelector(".product-list-container-mob").style.display = 'none'
+    document.querySelector(".desktop").style.display = 'grid'
+    document.querySelector(".mobile").style.display = 'none'
+    document.querySelector(".page-1-mob").style.display = 'none'
+    document.querySelector(".page-2-mob").style.display = 'none'
     document.querySelector(".upper").style.display = 'none'
     document.querySelector(".lower").style.display = 'none'
 }
