@@ -325,6 +325,8 @@ body {
     .product-img {
         display: grid;
         background: #fff;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
     }
 
     .big-img {
@@ -461,6 +463,10 @@ body {
         border-radius: 40px;
         background-color: orange;
         border: none;
+    }
+
+    .buy button:hover {
+        cursor: pointer;
     }
 
     .product-description-img {

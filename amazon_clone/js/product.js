@@ -1,3 +1,12 @@
+// Redirect Page
+document.querySelector('.buynow').addEventListener('click',()=>{
+    location.href = '/address.html'
+})
+
+document.querySelector('.addtocart').addEventListener('click',()=>{
+    alert('Your item has been added to the cart')
+})
+
 // Sidebar
 const openMenu = document.querySelector('#open-menu')
 const closeMenu = document.querySelector('#close-menu')
