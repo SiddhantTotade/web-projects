@@ -498,6 +498,10 @@ body {
         width: 100%;
     }
 
+    .item:hover {
+        cursor: pointer;
+    }
+
     .item h4 {
         background-color: firebrick;
     }

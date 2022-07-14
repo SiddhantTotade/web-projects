@@ -1,3 +1,19 @@
+// Redirect Page
+document.querySelector('.cart').addEventListener('click', () => {
+    location.href = '/cart.html'
+})
+
+document.querySelector('.search-btn').addEventListener('click', (e) => {
+    if (document.getElementById('search-bar').value == 'mobile') {
+        e.preventDefault();
+        window.location.href = '/product-list.html'
+        document.getElementById('search-bar').value = " ";
+    }
+    else {
+        alert('Please type mobile in search bar.')
+    }
+})
+
 // Sidebar Menu
 const openMenu = document.querySelector('.open-menu')
 const closeMenu = document.querySelector('.close-menu')
