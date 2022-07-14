@@ -478,6 +478,14 @@ body {
         width: 100%;
     }
 
+    .item h4 {
+        background-color: firebrick;
+    }
+
+    .item h5 {
+        color: firebrick;
+    }
+
     #carousel-2 img {
         width: 100%;
         height: 20vh;
@@ -544,10 +552,6 @@ body {
         background: #fff;
     }
 
-    .item {
-        width: 100%;
-    }
-
     #carousel-3 img {
         width: 100%;
         height: 20vh;
@@ -605,10 +609,6 @@ body {
         display: flex;
         align-items: center;
         background: #fff;
-    }
-
-    .item {
-        width: 100%;
     }
 
     #carousel-4 img {
@@ -913,10 +913,6 @@ body {
         height: 15vh;
         overflow: auto;
         background-color: #fff;
-    }
-
-    .item {
-        padding: 0 20px;
     }
 
     .item-types img {
