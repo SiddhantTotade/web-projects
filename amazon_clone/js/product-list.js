@@ -1,16 +1,16 @@
 // Sidebar Menu
-// const openMenu = document.querySelector('.open-menu')
-// const closeMenu = document.querySelector('.close-menu')
+const openMenu = document.querySelector('.open-menu')
+const closeMenu = document.querySelector('.close-menu')
 const openMenuDesktop = document.querySelector('.open-menu-desktop')
 const closeMenuDesktop = document.querySelector('.close-menu-desktop')
 
-// openMenu.addEventListener('click', () => {
-//     document.querySelector('.sidebar').style.width = "250px";
-// });
+openMenu.addEventListener('click', () => {
+    document.querySelector('.sidebar').style.width = "250px";
+});
 
-// closeMenu.addEventListener('click', () => {
-//     document.querySelector('.sidebar').style.width = "0";
-// });
+closeMenu.addEventListener('click', () => {
+    document.querySelector('.sidebar').style.width = "0";
+});
 
 openMenuDesktop.addEventListener('click', () => {
     document.querySelector('.sidebar-desktop').style.width = "350px";
@@ -21,24 +21,21 @@ closeMenuDesktop.addEventListener('click', () => {
 });
 
 // Media Query
-// if (window.screen.width >= 400) {
-//     document.querySelector(".mobile").style.display = 'none'
-//     document.querySelector(".desktop").style.display = 'block'
-//     document.querySelector(".item-types").style.display = 'none'
-//     document.querySelector(".carousel-main-mob").style.display = 'none'
-//     document.querySelector(".card-carousel").style.display = 'none'
-//     document.querySelector(".upper").style.display = 'none'
-//     document.querySelector(".lower").style.display = 'none'
-// }
-// else if (window.screen.width <= 400) {
-//     document.querySelector(".mobile").style.display = 'block'
-//     document.querySelector(".desktop").style.display = 'none'
-//     document.querySelector(".main").style.display = 'none'
-//     document.querySelector(".grid-container").style.display = 'none'
-//     document.querySelector(".upper-desk").style.display = 'none'
-//     document.querySelector(".middle-desk").style.display = 'none'
-//     document.querySelector(".lower-desk").style.display = 'none'
-// }
+if (window.screen.width >= 400) {
+    document.querySelector(".desktop").style.display = 'block'
+    document.querySelector(".product-list-container-mob").style.display = 'none'
+    document.querySelector(".upper").style.display = 'none'
+    document.querySelector(".lower").style.display = 'none'
+}
+else if (window.screen.width <= 400) {
+    document.querySelector(".product-list-container-mob").style.display = 'block'
+    document.querySelector(".desktop").style.display = 'none'
+    document.querySelector(".page-1").style.display = 'none'
+    document.querySelector(".page-2").style.display = 'none'
+    document.querySelector(".upper-desk").style.display = 'none'
+    document.querySelector(".middle-desk").style.display = 'none'
+    document.querySelector(".lower-desk").style.display = 'none'
+}
 
 // Dropdown Menu
 let dropdownBtn = document.querySelector(".dropdown-btn")
