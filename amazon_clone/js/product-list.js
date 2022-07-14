@@ -50,7 +50,7 @@ window.onclick = () => {
     menuContent.classList.remove('show')
 }
 
-// Pagination
+// Pagination Desktop
 document.querySelector('#one').addEventListener('click', () => {
     document.getElementsByClassName('.page-1').style.display = "grid"
     document.getElementsByClassName('.page-2').style.display = "none"
@@ -66,4 +66,22 @@ document.querySelector('.prev').addEventListener('click', () => {
 document.querySelector('.next').addEventListener('click', () => {
     document.querySelector('.page-2').style.display = "grid"
     document.querySelector('.page-1').style.display = "none"
+})
+
+// Pagination Mobile
+document.querySelector('#one-mob').addEventListener('click', () => {
+    document.getElementsByClassName('.page-1-mob').style.display = "grid"
+    document.getElementsByClassName('.page-2-mob').style.display = "none"
+})
+document.querySelector('#two-mob').addEventListener('click', () => {
+    document.querySelector('.page-2-mob').style.display = "grid"
+    document.querySelector('.page-1-mob').style.display = "none"
+})
+document.querySelector('.prev-mob').addEventListener('click', () => {
+    document.querySelector('.page-1-mob').style.display = "grid"
+    document.querySelector('.page-2-mob').style.display = "none"
+})
+document.querySelector('.next-mob').addEventListener('click', () => {
+    document.querySelector('.page-2-mob').style.display = "grid"
+    document.querySelector('.page-1-mob').style.display = "none"
 })

@@ -686,6 +686,11 @@ body {
         margin-top: 1em;
     }
 
+    .product-list-container-mob h4,
+    .product-list-container-mob small {
+        color: #000000;
+    }
+
     .product-container {
         width: 95%;
         margin: auto;
@@ -694,11 +699,6 @@ body {
         gap: 10px;
         border: 1px solid gainsboro;
         border-radius: 5px;
-    }
-
-    .product-container h4,
-    .product-container small {
-        color: #000000;
     }
 
     .product-img {
@@ -781,7 +781,7 @@ body {
         color: #000000;
     }
 
-    .page-2 {
+    .page-2-mob {
         display: none;
     }
 
