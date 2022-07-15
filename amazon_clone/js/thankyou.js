@@ -20,6 +20,19 @@ closeMenuDesktop.addEventListener('click', () => {
     document.querySelector('.sidebar-desktop').style.width = "0";
 });
 
+// Dropdown
+let dropdownBtn = document.querySelector(".dropdown-btn")
+let menuContent = document.querySelector(".dropdown-menu")
+
+dropdownBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menuContent.classList.toggle('show')
+});
+
+window.onclick = () => {
+    menuContent.classList.remove('show')
+}
+
 // Media Query
 if (window.screen.width >= 400) {
     document.querySelector('.delivery-mob').style.display = 'none'
@@ -34,3 +47,8 @@ else if (window.screen.width <= 400) {
     document.querySelector(".middle-desk").style.display = 'none'
     document.querySelector(".lower-desk").style.display = 'none'
 }
+
+// Redirect Page
+document.querySelector('.continue-shopping-btn').addEventListener('click', () => {
+    location.href = '/index.html';
+})

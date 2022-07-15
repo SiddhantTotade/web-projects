@@ -67,6 +67,13 @@ body {
         background-color: #1c2634;
     }
 
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -78,6 +85,7 @@ body {
 
     .left {
         display: flex;
+        align-items: center;
         gap: 20px;
         height: 60px;
     }
@@ -112,6 +120,7 @@ body {
     .middle {
         width: 60%;
         display: flex;
+        align-items: center;
     }
 
     .sidebar-desktop {
@@ -197,6 +206,7 @@ body {
     }
 
     .dropdown {
+        width: 100%;
         display: flex;
         position: relative;
     }
@@ -240,6 +250,7 @@ body {
     }
 
     .search-form {
+        width: 100%;
         overflow: auto;
     }
 
@@ -249,7 +260,8 @@ body {
     }
 
     .search input[type="text"] {
-        width: 75em;
+        border: 0px;
+        width: 100%;
         padding: 10px 10px;
         border: none;
         font-weight: 600;
@@ -274,6 +286,7 @@ body {
 
     .right {
         display: flex;
+        align-items: center;
         gap: 20px;
     }
 
@@ -451,6 +464,10 @@ body {
     .card-product-img {
         padding: auto;
         margin: auto;
+    }
+
+    .card-product-img:hover {
+        cursor: pointer;
     }
 
     .card-images img {

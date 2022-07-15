@@ -26,17 +26,27 @@ body {
         background-color: #1c2634;
     }
 
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-width: 800px;
         margin: 0 1em;
-        padding: 1em .5em;
+        padding: 5px 0;
     }
 
-    .sub-container {
-        background-color: #142242;
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 60px;
     }
 
     .logo {
@@ -46,8 +56,8 @@ body {
     }
 
     .amazon-logo {
-        width: 70%;
-        height: 5vh;
+        width: 100%;
+        height: 4vh;
         object-fit: contain;
     }
 
@@ -63,7 +73,13 @@ body {
     }
 
     .location-icon {
-        font-size: 1.5em;
+        font-size: 20px;
+    }
+
+    .middle {
+        width: 60%;
+        display: flex;
+        align-items: center;
     }
 
     .sidebar-desktop {
@@ -136,9 +152,8 @@ body {
     }
 
     .dropdown-btn {
-        height: 3em;
         width: 5em;
-        border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 0px 0px 5px;
         border: none;
         color: #000000;
         background-color: #eee7dd;
@@ -150,8 +165,9 @@ body {
     }
 
     .dropdown {
+        width: 100%;
+        display: flex;
         position: relative;
-        display: inline-block;
     }
 
     .dropdown-menu {
@@ -159,6 +175,7 @@ body {
         position: absolute;
         min-width: 15em;
         max-height: 15em;
+        top: 100%;
         overflow: auto;
         z-index: 1;
         background-color: rgb(238, 238, 238);
@@ -191,19 +208,23 @@ body {
         display: block;
     }
 
+    .search-form {
+        width: 100%;
+        overflow: auto;
+    }
+
     .search {
         display: flex;
         overflow: auto;
-        border-radius: 5px 0 0 5px;
     }
 
     .search input[type="text"] {
-        width: 75em;
-        padding: 12px 10px;
+        border: 0px;
+        width: 100%;
+        padding: 10px 10px;
         border: none;
         font-weight: 600;
         color: #000000;
-        border-radius: 5px 0 0 5px;
     }
 
     .search-btn {
@@ -214,12 +235,22 @@ body {
         cursor: pointer;
     }
 
+    .search-btn i {
+        font-size: 25px;
+    }
+
     .search i {
         color: #000000;
     }
 
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
     .flag {
-        width: 5em;
+        width: 4em;
     }
 
     .india-flag {
@@ -261,8 +292,10 @@ body {
 
     .sub-container {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        height: 3em;
+        height: 4vh;
+        background-color: #142242;
     }
 
     .menu-icon {
@@ -317,6 +350,24 @@ body {
 
     .product-img img {
         width: 100%;
+    }
+
+    .continue-shopping {
+        width: 80%;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    .continue-shopping button {
+        padding: 10px 40px;
+        border-radius: 5px;
+        background-color: yellow;
+        color: #000000;
+        border: none;
+    }
+
+    .continue-shopping button:hover {
+        cursor: pointer;
     }
 
     .upper-desk {

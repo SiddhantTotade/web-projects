@@ -39,6 +39,11 @@ else if (window.screen.width <= 400) {
     document.querySelector(".lower-desk").style.display = 'none'
 }
 
+// Redirect Page
+document.querySelector('.cart').addEventListener('click', () => {
+    location.href = '/cart.html';
+})
+
 // Dropdown Menu
 let dropdownBtn = document.querySelector(".dropdown-btn")
 let menuContent = document.querySelector(".dropdown-menu")

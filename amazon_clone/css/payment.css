@@ -22,6 +22,7 @@ body {
 @media screen and (min-width:401px) {
 
     .payment {
+        display: grid;
         width: 80%;
         margin: auto;
     }
@@ -53,6 +54,11 @@ body {
         border: none;
         background-color: orange;
         color: #000000;
+    }
+
+    .payment-block-1 button:hover,
+    .payment input:hover {
+        cursor: pointer;
     }
 
     .amazon-pay-bal {

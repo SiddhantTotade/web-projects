@@ -4,7 +4,7 @@ document.querySelector('.cart').addEventListener('click', () => {
 })
 
 document.querySelector('.search-btn').addEventListener('click', (e) => {
-    if (document.getElementById('search-bar').value == 'mobile') {
+    if (document.getElementById('search-bar').value.toLowerCase() == 'mobile') {
         e.preventDefault();
         window.location.href = '/product-list.html';
         document.getElementById('search-bar').value = " ";

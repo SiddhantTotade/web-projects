@@ -26,6 +26,10 @@ body {
         margin: auto;
     }
 
+    .address-container button:hover {
+        cursor: pointer;
+    }
+
     .address {
         width: 80%;
         padding-top: 20px;

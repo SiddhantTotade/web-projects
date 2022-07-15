@@ -7,6 +7,10 @@ document.querySelector('.addtocart').addEventListener('click',()=>{
     alert('Your item has been added to the cart')
 })
 
+document.querySelector('.cart').addEventListener('click', () => {
+    location.href = '/cart.html';
+})
+
 // Sidebar
 const openMenu = document.querySelector('#open-menu')
 const closeMenu = document.querySelector('#close-menu')

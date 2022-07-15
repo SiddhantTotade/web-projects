@@ -11,23 +11,72 @@
 </head>
 
 <body>
-    <!-- Cart for Desktop -->
+    <!-- Header for Desktop -->
     <header class="desktop">
         <nav class="container">
-            <!-- Div 1 - Logo -->
-            <div class="logo">
-                <img class="amazon-logo" src="./img/amazon-logo.png" alt="">
-                <span>.in</span>
-            </div>
-            <!-- Div 2 - Address -->
-            <div class="address-container">
-                <i class="uil uil-location-point location-icon"></i>
-                <div class="address">
-                    <span><small>Deliver to Siddhant</small></span>
-                    <h4>Raipur 492009</h4>
+            <div class="left">
+                <div class="logo">
+                    <img class="amazon-logo" src="./img/amazon-logo.png" alt="">
+                    <span>.in</span>
+                </div>
+                <div class="address-container">
+                    <i class="uil uil-location-point location-icon"></i>
+                    <div class="address">
+                        <span><small>Deliver to Siddhant</small></span>
+                        <h4>Raipur 0X0X0X</h4>
+                    </div>
                 </div>
             </div>
-            <!-- Div 3 - Sidebar Desktop -->
+            <div class="middle">
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        All <i class="uil uil-angle-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <li><a href="#">All Categories</a></li>
+                        <li><a href="#">Alexa Devices</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Computers & Accessories</a></li>
+                        <li><a href="#">Cloths</a></li>
+                        <li><a href="#">Collectibles</a></li>
+                        <li><a href="#">Deals</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Sports, Fitness & Outdoors</a></li>
+                        <li><a href="#">Shoe & Handbags</a></li>
+                        <li><a href="#">Toys and Games</a></li>
+                        <li><a href="#">Watches</a></li>
+                    </div>
+                    <div class="search-form">
+                        <form class="search" id="search">
+                            <input type="text" id="search-bar" class="search-bar">
+                            <button class="search-btn" type="submit"><i class="uil uil-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="flag">
+                    <img class="india-flag" src="./img/india.png" alt="">
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="account">
+                    <span><small>Hello, Siddhant</small></span>
+                    <div class="account-down">
+                        <h4>Account & Lists</h4>
+                        <i class="uil uil-angle-down account-icon"></i>
+                    </div>
+                </div>
+                <div class="order">
+                    <span><small>Return</small></span>
+                    <h4>& Orders</h4>
+                </div>
+                <div class="cart">
+                    <i class="uil uil-shopping-cart cart-item"></i>
+                </div>
+            </div>
             <div class="sidebar-desktop">
                 <div class="close-and-user close">
                     <i class="uil uil-multiply close-menu-desktop"></i>
@@ -88,59 +137,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Div 4 - Dropdown -->
-            <div class="dropdown">
-                <button class="dropdown-btn">
-                    All <i class="uil uil-angle-down"></i>
-                </button>
-                <div class="dropdown-menu">
-                    <li><a href="#">All Categories</a></li>
-                    <li><a href="#">Alexa Devices</a></li>
-                    <li><a href="#">Books</a></li>
-                    <li><a href="#">Computers & Accessories</a></li>
-                    <li><a href="#">Cloths</a></li>
-                    <li><a href="#">Collectibles</a></li>
-                    <li><a href="#">Deals</a></li>
-                    <li><a href="#">Electronics</a></li>
-                    <li><a href="#">Furniture</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Software</a></li>
-                    <li><a href="#">Sports, Fitness & Outdoors</a></li>
-                    <li><a href="#">Shoe & Handbags</a></li>
-                    <li><a href="#">Toys and Games</a></li>
-                    <li><a href="#">Watches</a></li>
-                </div>
-            </div>
-            <!-- Div 5 - Search & Search Button -->
-            <form class="search">
-                <input type="text" class="search-bar">
-                <button class="search-btn"><i class="uil uil-search"></i></button>
-            </form>
-            <!-- Div 6 - Flag -->
-            <div class="flag">
-                <img class="india-flag" src="./img/india.png" alt="">
-                <i class="uil uil-angle-down"></i>
-            </div>
-            <!-- Div 7 - Account -->
-            <div class="account">
-                <span><small>Hello, Siddhant</small></span>
-                <div class="account-down">
-                    <h4>Account & Lists</h4>
-                    <i class="uil uil-angle-down account-icon"></i>
-                </div>
-            </div>
-            <!-- Div 8 - Order -->
-            <div class="order">
-                <span><small>Return</small></span>
-                <h4>& Orders</h4>
-            </div>
-            <!-- Div 9  - Cart -->
-            <div class="cart-icon">
-                <i class="uil uil-shopping-cart cart-item-icon"></i>
-            </div>
         </nav>
-        <!-- sub Container Div -->
-        <div class="sub-container">
+        <div class="sub-container container">
             <nav class="sub-nav">
                 <div class="col open-menu-desktop">
                     <i class="uil uil-bars menu-icon open-menu"></i>
@@ -199,7 +197,7 @@
     </header>
 
     <div class="cart-container">
-        <div class="cart">
+        <div class="shopping-cart">
             <div class="cart-title">
                 <h1>Shopping Cart</h1>
                 <div class="price">
@@ -291,7 +289,7 @@
                 </div>
             </div>
         </div>
-        <div class="proceed cart-container cart">
+        <div class="proceed cart-container shopping-cart">
             <div class="free-delivery">
                 <i class="uil uil-check-circle"></i>
                 <small>Select this item at checkout.</small>
@@ -300,7 +298,7 @@
                 <h2>Subtotal: ₹ 2,17,489.00</h2>
             </div>
             <div class="checkout">
-                <button>Proceed to Buy</button>
+                <button class="proceed-to-buy">Proceed to Buy</button>
             </div>
         </div>
     </div>

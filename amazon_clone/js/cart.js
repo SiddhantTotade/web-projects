@@ -20,6 +20,19 @@ closeMenuDesktop.addEventListener('click', () => {
     document.querySelector('.sidebar-desktop').style.width = "0";
 });
 
+// Dropdown
+let dropdownBtn = document.querySelector(".dropdown-btn")
+let menuContent = document.querySelector(".dropdown-menu")
+
+dropdownBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menuContent.classList.toggle('show')
+});
+
+window.onclick = () => {
+    menuContent.classList.remove('show')
+}
+
 // Product Counter
 const counter = document.querySelectorAll('.product-counter');
 
@@ -61,3 +74,8 @@ else if (window.screen.width <= 400) {
     document.querySelector(".middle-desk").style.display = 'none'
     document.querySelector(".lower-desk").style.display = 'none'
 }
+
+// Redirect Page
+document.querySelector('.proceed-to-buy').addEventListener('click', () => {
+    location.href = '/address.html'
+})

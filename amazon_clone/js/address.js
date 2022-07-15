@@ -1,3 +1,8 @@
+// Redirect Page
+document.querySelector('.delivery').addEventListener('click', () => {
+    location.href = '/payment.html'
+})
+
 // Country Dropdown
 document.querySelector('.dropbtn').addEventListener('click', () => {
     document.getElementById("myDropdown").classList.toggle("show");
