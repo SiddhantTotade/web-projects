@@ -39,8 +39,13 @@ else if (window.screen.width <= 400) {
     document.querySelector(".lower-desk").style.display = 'none'
 }
 
-// Redirect Page
+// Redirect Page Desktop
 document.querySelector('.cart').addEventListener('click', () => {
+    location.href = '/cart.html';
+})
+
+// Redirect Page Mobile
+document.querySelector('.uil-shopping-cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })
 

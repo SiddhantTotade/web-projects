@@ -58,3 +58,7 @@ document.querySelector('.continue-shopping-btn').addEventListener('click', () =>
 document.querySelector('.shopping').addEventListener('click', () => {
     location.href = '/index.html';
 })
+
+document.querySelector('.uil-shopping-cart').addEventListener('click', () => {
+    location.href = '/cart.html';
+})

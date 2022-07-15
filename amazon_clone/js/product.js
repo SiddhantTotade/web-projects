@@ -11,12 +11,18 @@ document.querySelector('.cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })
 
+
 // Redirect Page Mobile
 document.querySelector('.buynow-mob').addEventListener('click', () => {
     location.href = '/address.html'
 })
+
 document.querySelector('.addtocart-mob').addEventListener('click', () => {
     alert('Your item has been added to the cart')
+})
+
+document.querySelector('.uil-shopping-cart').addEventListener('click', () => {
+    location.href = '/cart.html';
 })
 
 // Sidebar
