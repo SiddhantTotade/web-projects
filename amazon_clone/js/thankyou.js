@@ -46,9 +46,15 @@ else if (window.screen.width <= 400) {
     document.querySelector(".upper-desk").style.display = 'none'
     document.querySelector(".middle-desk").style.display = 'none'
     document.querySelector(".lower-desk").style.display = 'none'
+    document.querySelector(".continue-shopping-btn").style.display = 'none'
 }
 
-// Redirect Page
+// Redirect Page Desktop
 document.querySelector('.continue-shopping-btn').addEventListener('click', () => {
+    location.href = '/index.html';
+})
+
+// Redirect Page Mobile
+document.querySelector('.shopping').addEventListener('click', () => {
     location.href = '/index.html';
 })

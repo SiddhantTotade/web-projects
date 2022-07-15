@@ -13,7 +13,7 @@ else if (window.screen.width <= 400) {
 }
 
 
-// Redirect Page
+// Redirect Page Desktop
 let amazonPay = document.getElementById('amazon-pay')
 let addCard = document.getElementById('add-card')
 let otherUPI = document.getElementById('other-upi')
@@ -51,6 +51,62 @@ document.querySelector('.continue').addEventListener('click', () => {
         payOnDelivery.checked = false
         addCard.checked = false
         otherUPI.checked = false
+    }
+    else {
+        alert("Please select an option for delivery.")
+    }
+})
+// Redirect Page Mobile
+let amazonPayMob = document.getElementById('amazon-pay-mob')
+let addCardMob = document.getElementById('add-card-mob')
+let otherUPIMob = document.getElementById('other-upi-mob')
+let payOnDeliveryMob = document.getElementById('pay-on-delivery-mob')
+let netBankingMob = document.getElementById('net-banking-mob')
+
+document.getElementById('amazon-pay-mob').addEventListener('click', () => {
+    amazonPayMob.checked = true;
+    addCardMob.checked = false;
+    otherUPIMob.checked = false;
+    payOnDeliveryMob.checked = false;
+    netBankingMob.checked = false;
+})
+document.getElementById('add-card-mob').addEventListener('click', () => {
+    addCardMob.checked = true;
+    amazonPayMob.checked = false;
+    otherUPIMob.checked = false;
+    payOnDeliveryMob.checked = false;
+    netBankingMob.checked = false;
+})
+document.getElementById('other-upi-mob').addEventListener('click', () => {
+    otherUPIMob.checked = true;
+    amazonPayMob.checked = false;
+    addCardMob.checked = false;
+    payOnDeliveryMob.checked = false;
+    netBankingMob.checked = false;
+})
+document.getElementById('pay-on-delivery-mob').addEventListener('click', () => {
+    payOnDeliveryMob.checked = true;
+    amazonPayMob.checked = false;
+    addCardMob.checked = false;
+    otherUPIMob.checked = false;
+    netBankingMob.checked = false;
+})
+document.getElementById('net-banking-mob').addEventListener('click', () => {
+    netBankingMob.checked = true;
+    payOnDeliveryMob.checked = false;
+    amazonPayMob.checked = false;
+    addCardMob.checked = false;
+    otherUPIMob.checked = false;
+})
+
+document.getElementById('next-continue').addEventListener('click', () => {
+    if (amazonPayMob.checked == true || netBankingMob.checked == true || payOnDeliveryMob.checked == true || addCardMob.checked == true || otherUPIMob.checked == true) {
+        location.href = '/thankyou.html'
+        amazonPayMob.checked = false
+        payOnDeliveryMob.checked = false
+        addCardMob.checked = false
+        otherUPIMob.checked = false
+        netBankingMob.checked = false
     }
     else {
         alert("Please select an option for delivery.")

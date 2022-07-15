@@ -249,7 +249,7 @@
             <h2>Select a payment method</h2>
         </div>
         <div class="continue address-title">
-            <button class="next">Continue</button>
+            <button class="next-continue" id="next-continue">Continue</button>
         </div>
         <div class="amazon-pay address-title">
             <div class="title">
@@ -265,7 +265,7 @@
                 <h4>BUY NOW, PAY LATER</h4>
             </div>
             <div class="pay-later">
-                <input type="radio">
+                <input type="radio" class="amazon-pay-mob" id="amazon-pay-mob">
                 <h5>Amazon Pay Later</h5>
             </div>
         </div>
@@ -296,24 +296,24 @@
             </div>
             <div class="ways">
                 <div class="upi">
-                    <input type="radio">
+                    <input type="radio" class="other-upi-mob" id="other-upi-mob">
                     <h5>Other UPI Apps</h5>
                 </div>
                 <div class="upi">
-                    <input type="radio">
+                    <input type="radio" class="add-card-mob" id="add-card-mob">
                     <div class="debit">
                         <h5>Add Debit/Credit/ATM Card</h5>
                         <small>You can save your cards as per new RBI guidelines.</small>
                     </div>
                 </div>
                 <div class="upi">
-                    <input type="radio">
+                    <input type="radio" class="net-banking-mob" id="net-banking-mob">
                     <h5>Net Banking</h5>
                 </div>
             </div>
         </div>
         <div class="pay-on-delivery address-title upi">
-            <input type="radio">
+            <input type="radio" class="pay-on-delivery-mob" id="pay-on-delivery-mob">
             <div class="info">
                 <h4>Pay on Delivery</h4>
                 <small>
@@ -323,7 +323,7 @@
             </div>
         </div>
         <div class="continue address-title">
-            <button class="next">Continue</button>
+            <button class="next-continue" id="next-continue">Continue</button>
         </div>
     </div>
     <footer class="delivery-footer">

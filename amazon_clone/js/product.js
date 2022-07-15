@@ -1,14 +1,22 @@
-// Redirect Page
-document.querySelector('.buynow').addEventListener('click',()=>{
+// Redirect Page Desktop
+document.querySelector('.buynow').addEventListener('click', () => {
     location.href = '/address.html'
 })
 
-document.querySelector('.addtocart').addEventListener('click',()=>{
+document.querySelector('.addtocart').addEventListener('click', () => {
     alert('Your item has been added to the cart')
 })
 
 document.querySelector('.cart').addEventListener('click', () => {
     location.href = '/cart.html';
+})
+
+// Redirect Page Mobile
+document.querySelector('.buynow-mob').addEventListener('click', () => {
+    location.href = '/address.html'
+})
+document.querySelector('.addtocart-mob').addEventListener('click', () => {
+    alert('Your item has been added to the cart')
 })
 
 // Sidebar

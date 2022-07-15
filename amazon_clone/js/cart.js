@@ -75,7 +75,12 @@ else if (window.screen.width <= 400) {
     document.querySelector(".lower-desk").style.display = 'none'
 }
 
-// Redirect Page
+// Redirect Page Desktop
 document.querySelector('.proceed-to-buy').addEventListener('click', () => {
+    location.href = '/address.html'
+})
+
+// Redirect Page Mobile
+document.querySelector('.proceed-to-buy-mob').addEventListener('click', () => {
     location.href = '/address.html'
 })
