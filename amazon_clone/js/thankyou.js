@@ -59,6 +59,6 @@ document.querySelector('.shopping').addEventListener('click', () => {
     location.href = '/index.html';
 })
 
-document.querySelector('.uil-shopping-cart').addEventListener('click', () => {
+document.getElementById('uil-shopping-cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })

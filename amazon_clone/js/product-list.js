@@ -45,7 +45,7 @@ document.querySelector('.cart').addEventListener('click', () => {
 })
 
 // Redirect Page Mobile
-document.querySelector('.uil-shopping-cart').addEventListener('click', () => {
+document.getElementById('uil-shopping-cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })
 

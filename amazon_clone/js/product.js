@@ -21,7 +21,7 @@ document.querySelector('.addtocart-mob').addEventListener('click', () => {
     alert('Your item has been added to the cart')
 })
 
-document.querySelector('.uil-shopping-cart').addEventListener('click', () => {
+document.getElementById('uil-shopping-cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })
 
