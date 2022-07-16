@@ -1,6 +1,5 @@
 // Media Query
 if (window.screen.width >= 400) {
-    // document.querySelector('.payment').style.display = 'grid'
     document.querySelector('.payment-mob').style.display = 'none'
     document.querySelector('.delivery-footer').style.display = 'none'
 }
@@ -46,7 +45,7 @@ document.getElementById('pay-on-delivery').addEventListener('click', () => {
 
 document.querySelector('.continue').addEventListener('click', () => {
     if (amazonPay.checked == true || payOnDelivery.checked == true || addCard.checked == true || otherUPI.checked == true) {
-        location.href = '/thankyou.html'
+        location.href = '/thankyou'
         amazonPay.checked = false
         payOnDelivery.checked = false
         addCard.checked = false
@@ -101,7 +100,7 @@ document.getElementById('net-banking-mob').addEventListener('click', () => {
 
 document.getElementById('next-continue').addEventListener('click', () => {
     if (amazonPayMob.checked == true || netBankingMob.checked == true || payOnDeliveryMob.checked == true || addCardMob.checked == true || otherUPIMob.checked == true) {
-        location.href = '/thankyou.html'
+        location.href = '/thankyou'
         amazonPayMob.checked = false
         payOnDeliveryMob.checked = false
         addCardMob.checked = false

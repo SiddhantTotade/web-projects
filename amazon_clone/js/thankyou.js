@@ -51,14 +51,14 @@ else if (window.screen.width <= 400) {
 
 // Redirect Page Desktop
 document.querySelector('.continue-shopping-btn').addEventListener('click', () => {
-    location.href = '/index.html';
+    location.href = '/index';
 })
 
 // Redirect Page Mobile
 document.querySelector('.shopping').addEventListener('click', () => {
-    location.href = '/index.html';
+    location.href = '/index';
 })
 
 document.getElementById('uil-shopping-cart').addEventListener('click', () => {
-    location.href = '/cart.html';
+    location.href = '/cart';
 })
