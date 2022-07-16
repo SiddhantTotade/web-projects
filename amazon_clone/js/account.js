@@ -2,6 +2,7 @@
 if (window.screen.width >= 400) {
     document.querySelector(".desktop").style.display = 'block'
     document.querySelector(".mobile").style.display = 'none'
+    document.querySelector(".user-account-mob").style.display = 'none'
     document.querySelector(".upper").style.display = 'none'
     document.querySelector(".lower").style.display = 'none'
 }
