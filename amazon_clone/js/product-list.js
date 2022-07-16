@@ -41,12 +41,12 @@ else if (window.screen.width <= 400) {
 
 // Redirect Page Desktop
 document.querySelector('.cart').addEventListener('click', () => {
-    location.href = '/cart';
+    location.href = '/cart.html';
 })
 
 // Redirect Page Mobile
 document.getElementById('uil-shopping-cart').addEventListener('click', () => {
-    location.href = '/cart';
+    location.href = '/cart.html';
 })
 
 // Dropdown Menu

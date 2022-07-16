@@ -1,11 +1,11 @@
 // Redirect Page Desktop
 document.querySelector('.delivery').addEventListener('click', () => {
-    location.href = '/payment'
+    location.href = '/payment.html'
 })
 
 // Redirect Page Mobile
 document.querySelector('.delivery-btn').addEventListener('click', () => {
-    location.href = '/payment'
+    location.href = '/payment.html'
 })
 
 // Country Dropdown

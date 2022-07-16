@@ -77,10 +77,10 @@ else if (window.screen.width <= 400) {
 
 // Redirect Page Desktop
 document.querySelector('.proceed-to-buy').addEventListener('click', () => {
-    location.href = '/address'
+    location.href = '/address.html'
 })
 
 // Redirect Page Mobile
 document.querySelector('.proceed-to-buy-mob').addEventListener('click', () => {
-    location.href = '/address'
+    location.href = '/address.html'
 })

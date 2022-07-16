@@ -1,16 +1,16 @@
 // Redirect Page Desktop
 document.querySelector('.cart').addEventListener('click', () => {
-    location.href = '/cart';
+    location.href = '/cart.html';
 })
 
 document.querySelector('.uil-shopping-cart').addEventListener('click', () => {
-    location.href = '/cart';
+    location.href = '/cart.html';
 })
 // For Desktop
 document.querySelector('.search-btn').addEventListener('click', (e) => {
     if (document.getElementById('search-bar').value.toLowerCase() == 'mobile') {
         e.preventDefault();
-        window.location.href = '/product-list';
+        window.location.href = '/product-list.html';
         document.getElementById('search-bar').value = " ";
     }
     else {
@@ -22,7 +22,7 @@ document.querySelector('.search-btn').addEventListener('click', (e) => {
 document.querySelector('.submit-btn').addEventListener('click', (e) => {
     if (document.getElementById('search-bar-mob').value.toLowerCase() == 'mobile') {
         e.preventDefault();
-        window.location.href = '/product-list';
+        window.location.href = '/product-list.html';
         document.getElementById('search-bar-mob').value = " ";
     }
     else {
@@ -34,7 +34,7 @@ let item = document.querySelectorAll('.item,.carousel-main-mob,.item-card,.img-g
 
 Array.prototype.forEach.call(item, (e) => {
     e.addEventListener('click', () => {
-        location.href = '/product'
+        location.href = '/product.html'
     })
 })
 
@@ -187,20 +187,20 @@ $(document).ready(() => {
 
 // Redirect Page Mobile
 document.querySelector('.item-card').addEventListener('click', () => {
-    location.href = '/product'
+    location.href = '/product.html'
 })
 document.querySelector('.carousel-main-mob').addEventListener('click', () => {
-    location.href = '/product'
+    location.href = '/product.html'
 })
 document.querySelector('.item').addEventListener('click', () => {
-    location.href = '/product'
+    location.href = '/product.html'
 })
 document.querySelector('.animation,.sub-card-item,.img-grid').addEventListener('click', () => {
-    location.href = '/product'
+    location.href = '/product.html'
 })
 document.querySelector('.sub-card-item').addEventListener('click', () => {
-    location.href = '/product'
+    location.href = '/product.html'
 })
 document.querySelector('.img-grid').addEventListener('click', () => {
-    location.href = '/product'
+    location.href = '/product.html'
 })
