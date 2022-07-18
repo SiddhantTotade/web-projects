@@ -78,6 +78,7 @@ body {
     }
 
     .user-login button {
+        cursor: pointer;
         color: #000000;
         border: none;
         background-color: orange;
@@ -115,6 +116,7 @@ body {
     }
 
     .create-account button {
+        cursor: pointer;
         width: 90%;
         height: 4vh;
         border-radius: 5px;

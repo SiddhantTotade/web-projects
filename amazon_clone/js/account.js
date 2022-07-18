@@ -3,6 +3,22 @@ document.querySelector('.cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })
 
+document.querySelector('.user-order').addEventListener('click', () => {
+    location.href = '/order.html';
+})
+
+document.querySelector('.login').addEventListener('click', () => {
+    location.href = '/profile.html';
+})
+
+let address = document.querySelectorAll('.address')
+
+Array.prototype.forEach.call(address, (e) => {
+    e.addEventListener('click', () => {
+        location.href = '/changeaddress.html';
+    })
+})
+
 document.querySelector('.uil-shopping-cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })
@@ -31,7 +47,6 @@ document.querySelector('.submit-btn').addEventListener('click', (e) => {
 })
 
 let item = document.querySelectorAll('.item,.carousel-main-mob,.item-card,.img-grid,.animation,.sub-card-item')
-
 Array.prototype.forEach.call(item, (e) => {
     e.addEventListener('click', () => {
         location.href = '/product.html'

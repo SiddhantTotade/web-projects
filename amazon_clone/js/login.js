@@ -1,3 +1,7 @@
+document.querySelector('.create').addEventListener('click', () => {
+    location.href = '/create.html';
+})
+
 // Media Query
 if (window.screen.width >= 400) {
     document.querySelector(".login-desktop").style.display = 'block'
@@ -9,7 +13,7 @@ else if (window.screen.width <= 400) {
 
 }
 
-// Login and Create
+// Login and Create for Mobile
 document.getElementById('user').style.display = 'none'
 
 document.getElementById('signin').addEventListener('click', () => {

@@ -1,4 +1,16 @@
 // Redirect Page Desktop
+document.querySelector('.account').addEventListener('click', () => {
+    location.href = '/account.html';
+})
+
+document.querySelector('.order').addEventListener('click', () => {
+    location.href = '/order.html';
+})
+
+document.querySelector('.address').addEventListener('click', () => {
+    location.href = '/changeaddress.html';
+})
+
 document.querySelector('.cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })

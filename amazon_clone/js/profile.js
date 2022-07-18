@@ -3,6 +3,22 @@ document.querySelector('.cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })
 
+document.querySelector('.name').addEventListener('click', () => {
+    location.href = '/changename.html';
+})
+
+document.querySelector('.email').addEventListener('click', () => {
+    location.href = '/changeemail.html';
+})
+
+document.querySelector('.password').addEventListener('click', () => {
+    location.href = '/changepassword.html';
+})
+
+document.querySelector('.mobno').addEventListener('click', () => {
+    location.href = '/changemobile.html';
+})
+
 document.querySelector('.uil-shopping-cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })
