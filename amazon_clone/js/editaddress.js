@@ -6,6 +6,10 @@ document.querySelector('.cart').addEventListener('click', () => {
 document.querySelector('.uil-shopping-cart').addEventListener('click', () => {
     location.href = '/cart.html';
 })
+
+document.querySelector('.save-btn').addEventListener('click', () => {
+    location.href = '/changeaddress.html';
+})
 // For Desktop
 document.querySelector('.search-btn').addEventListener('click', (e) => {
     if (document.getElementById('search-bar').value.toLowerCase() == 'mobile') {
