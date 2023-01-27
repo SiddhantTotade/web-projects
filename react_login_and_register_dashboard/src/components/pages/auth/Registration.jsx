@@ -30,7 +30,7 @@ const Registration = () => {
                 console.log(actualData)
                 document.getElementById('registration-form').reset()
                 setError({ status: true, msg: "Registration Success", type: "success" })
-                navigate('/')
+                navigate('/home')
             }
             else {
                 setError({ status: true, msg: "Password and confirm password is not matching.", type: "error" })
@@ -40,6 +40,7 @@ const Registration = () => {
             setError({ status: true, msg: "All fields are required", type: "error" })
         }
     }
+
     return (
         <Box component='form' noValidate sx={{ mt: 1 }} id="registration-form" onSubmit={handleSubmit}>
             <TextField margin='normal' required fullWidth type='name' id='name' name='name' label='Name' />
@@ -52,7 +53,7 @@ const Registration = () => {
             </Box>
             <NavLink to="/" variant="secondary">Forgot Password</NavLink>
             {
-                error.status ? <Alert severity={error.type}>{error.msg}</Alert> : ""
+                error.status ? <Alert sx={{ mt: 3 }} severity={error.type}>{error.msg}</Alert> : ""
             }
         </Box>
     )

@@ -9,7 +9,7 @@ const Navbar = () => {
                 <AppBar position='static' color='secondary'>
                     <Toolbar>
                         <Typography variant='h5' component='div' sx={{ flexGrow: 1 }}>
-                            Authentication Dashboard
+                            Authentication
                         </Typography>
                         <Button style={({ isActive }) => { return { backgroundColor: isActive ? "#6d1b7b" : "" } }} component={NavLink} to="/" sx={{ color: "white", textTransform: "None" }} >Home</Button>
                         <Button style={({ isActive }) => { return { backgroundColor: isActive ? "#6d1b7b" : "" } }} component={NavLink} to="/contact" sx={{ color: "white", textTransform: "None" }} >Contact</Button>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, TextField, Button, Box, Alert, Typography } from '@mui/material'
+import { Grid, TextField, Button, Box, Alert } from '@mui/material'
 import { useState } from 'react'
 
 const SendPasswordResetEmail = () => {
@@ -25,10 +25,11 @@ const SendPasswordResetEmail = () => {
             setError({ status: true, msg: "Please enter a valid email.", type: "error" })
         }
     }
+
     return (
         <Grid container justifyContent='center'>
-            <Grid item sm={6} xs={1}>
-                <Typography>Password Reset Email</Typography>
+            <Grid item sm={6} xs={1} >
+                <h1>Password Reset Email</h1>
                 <Box component='form' noValidate sx={{ mt: 1 }} id="password-reset-form" onSubmit={handleSubmit}>
                     <TextField margin='normal' required fullWidth type='email' id='email' name='email' label='Email' />
                     <Box textAlign='center'>

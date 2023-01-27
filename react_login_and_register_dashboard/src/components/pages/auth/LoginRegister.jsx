@@ -28,11 +28,13 @@ const LoginRegister = () => {
     }
 
     return (
-        <Grid container sx={{ height: "90vh" }}>
-            <Grid item lg={7} sm={5} sx={{ display: { xs: 'none', sm: 'block' }, backgroundImage: `url(${authPic})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', position: 'center' }}></Grid>
+        <Grid container sx={{ height: "93vh" }}>
+            <Grid item lg={7} sm={5} sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center', justifyContent: 'center' }}>
+                <img src={authPic} alt="" />
+            </Grid>
             <Grid item lg={5} sm={7} xs={12}>
                 <Card sx={{ width: "100%", height: "100%" }}>
-                    <Box>
+                    <Box sx={{ mx: 3, height: 530 }}>
                         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                             <Tabs onChange={handleChange} value={value} textColor='secondary' indicatorColor='secondary'>
                                 <Tab label='Login' sx={{ fontWeight: 'bold', textTransform: "none" }}></Tab>

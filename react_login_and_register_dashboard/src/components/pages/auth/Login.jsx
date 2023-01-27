@@ -24,12 +24,13 @@ const Login = () => {
             console.log(data)
             document.getElementById('login-form').reset()
             setError({ status: true, msg: "Login Success", type: "success" })
-            navigate('/')
+            navigate('/home')
         }
         else {
             setError({ status: true, msg: "All fields are required", type: "error" })
         }
     }
+
     return (
         <Box component='form' noValidate sx={{ mt: 1 }} id="login-form" onSubmit={handleSubmit}>
             <TextField margin='normal' required fullWidth type='email' id='email' name='email' label='Email' />
@@ -39,7 +40,7 @@ const Login = () => {
             </Box>
             <NavLink to="/reset-password-email" variant="secondary">Forgot Password ?</NavLink>
             {
-                error.status ? <Alert severity={error.type}>{error.msg}</Alert> : ""
+                error.status ? <Alert sx={{ mt: 3 }} severity={error.type}>{error.msg}</Alert> : ""
             }
         </Box>
     )
