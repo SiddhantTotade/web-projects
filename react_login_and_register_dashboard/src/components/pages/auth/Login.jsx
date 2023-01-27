@@ -37,7 +37,7 @@ const Login = () => {
             <Box textAlign='center'>
                 <Button type='submit' sx={{ mt: 3, mb: 2, px: 5 }} variant='contained' >Login</Button>
             </Box>
-            <NavLink to="/" variant="secondary">Forgot Password ?</NavLink>
+            <NavLink to="/reset-password-email" variant="secondary">Forgot Password ?</NavLink>
             {
                 error.status ? <Alert severity={error.type}>{error.msg}</Alert> : ""
             }
