@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+}
+
+.container {
+    width: 100%;
+}
+
+.title {
+    display: flexbox;
+}
+
+.title-front {
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 50%;
+    transform: translateX(-200%);
+    opacity: 0;
+    animation: slide-in-anim 2s ease-out forwards;
+}
+
+.title-back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 0);
+    font-size: 300px;
+}
+
+.djangram {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(47, 101, 131, 0.41);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.1px);
+}
+
+#djangram-path {
+    stroke: cyan;
+    stroke-dasharray: 12116.5;
+    stroke-dashoffset: 12116.5;
+    animation: djangram_logo 20s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-anim {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(0%);
+    }
+
+    75% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes djangram_logo {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
