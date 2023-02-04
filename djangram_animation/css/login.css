@@ -19,6 +19,7 @@ body {
     display: grid;
     align-items: center;
     background: #fff;
+    border-radius: 0 0 100px 0;
 }
 
 .login-title {
@@ -65,9 +66,65 @@ body {
     background: crimson;
 }
 
+.or {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid rgb(166, 165, 165);
+    margin: auto;
+}
+
+.or::before {
+    margin-right: 10px;
+}
+
+.or::after {
+    margin-left: 10px;
+}
+
+.o-auth {
+    display: grid;
+    gap: 15px;
+}
+
+.o-auth>button {
+    height: 4vh;
+    font-size: larger;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border: none;
+    background: rgb(239, 42, 81);
+    color: #fff;
+    cursor: pointer;
+}
+
+.o-auth>.google-btn {
+    background: rgb(185, 51, 51);
+}
+
+.o-auth>.google-btn:hover {
+    background: crimson;
+}
+
+.o-auth>.facebook-btn {
+    background: rgb(3, 109, 191);
+}
+
+.o-auth>.facebook-btn:hover {
+    background: rgb(0, 137, 242);
+}
+
 #djangram-logo {
-    stroke-dasharray: 2468;
-    stroke-dashoffset: 2468;
+    stroke-dasharray: 2376;
+    stroke-dashoffset: 2376;
     animation: djangram-logo 20s ease;
     animation-fill-mode: forwards;
 }
@@ -77,6 +134,39 @@ body {
     left: 70%;
     position: absolute;
     transform: translate(-50%, -50%);
+}
+
+.underline {
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 60%;
+    transform: translateX(-70%);
+    animation: slide-in-anim 5s ease-out forwards;
+}
+
+@keyframes slide-in-anim {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(7%);
+    }
+
+    75% {
+        transform: translateX(-7%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 @keyframes djangram-logo {
