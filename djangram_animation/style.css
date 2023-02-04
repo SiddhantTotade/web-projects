@@ -23,7 +23,7 @@ body {
     text-align: center;
     margin-left: 50%;
     transform: translateX(-200%);
-    animation: slide-in-anim 4s ease-out forwards;
+    animation: slide-in-anim 5s ease-out forwards;
     overflow: hidden;
     z-index: 2;
     position: absolute;
