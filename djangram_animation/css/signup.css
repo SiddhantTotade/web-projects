@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(12, 1, 41);
+}
+
+.register {
+    width: 100%;
+    display: flex;
+}
+
+.form {
+    width: 30%;
+    height: 80vh;
+    padding: 0 30px;
+    display: grid;
+    align-items: center;
+    background: #fff;
+    border-radius: 0 0 70px 0;
+}
+
+.register-title {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.register-subtitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.register-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-form>input {
+    height: 5vh;
+    padding: 10px;
+    font-size: large;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    border: 1px solid crimson;
+    outline: none;
+}
+
+.register-form>button {
+    height: 4vh;
+    font-size: larger;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border: none;
+    background: rgb(239, 42, 81);
+    color: #fff;
+    cursor: pointer;
+}
+
+.register-form>button:hover {
+    background: crimson;
+}
+
+.or {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid rgb(166, 165, 165);
+    margin: auto;
+    border-radius: 20px;
+}
+
+.or::before {
+    margin-right: 10px;
+}
+
+.or::after {
+    margin-left: 10px;
+}
+
+.o-auth {
+    display: grid;
+    gap: 15px;
+}
+
+.o-auth>button {
+    height: 4vh;
+    font-size: larger;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border: none;
+    background: rgb(239, 42, 81);
+    color: #fff;
+    cursor: pointer;
+}
+
+.o-auth>.google-btn {
+    background: rgb(185, 51, 51);
+}
+
+.o-auth>.google-btn:hover {
+    background: crimson;
+}
+
+.o-auth>.facebook-btn {
+    background: rgb(3, 109, 191);
+}
+
+.o-auth>.facebook-btn:hover {
+    background: rgb(0, 137, 242);
+}
+
+.login>button {
+    width: 100%;
+    height: 4vh;
+    color: #fff;
+    background: #0f03ae;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.login>.login-btn:hover {
+    background: #1100ff;
+}
+
+.djangram {
+    width: 70%;
+}
+
+#djangram-logo {
+    stroke-dasharray: 2376;
+    stroke-dashoffset: 2376;
+    animation: djangram-logo 20s ease;
+    animation-fill-mode: forwards;
+}
+
+.logo {
+    top: 45%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.blob {
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+    background: rgba(1, 35, 54, 0.41);
+    border-radius: 355% 400% 350% 250%;
+    box-shadow: rgb(68 32 40) 0px 4px 150px;
+    backdrop-filter: blur(15.1px);
+    animation: blob-anim 3s infinite linear;
+    z-index: -1;
+}
+
+.logo-svg {
+    width: 700px;
+    height: 700px;
+}
+
+#svgGroup {
+    stroke-width: 0.50mm;
+    fill: #c44242;
+    stroke: #fff;
+}
+
+.underline {
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 60%;
+    transform: translateX(-70%);
+    animation: slide-in-anim 5s ease-out forwards;
+}
+
+@keyframes slide-in-anim {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(7%);
+    }
+
+    75% {
+        transform: translateX(-7%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes djangram-logo {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes blob-anim {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+@media screen and (max-width: 936px) {
+    .form {
+        width: 85%;
+        height: 95vh;
+        border-radius: 0 0 50px 0;
+    }
+
+    .register-title {
+        margin-top: 30px;
+    }
+
+    .register-form>input {
+        height: 6vh !important;
+        max-height: 6vh !important;
+    }
+
+    .register-form>button {
+        height: 4vh !important;
+        max-height: 4vh !important;
+    }
+
+    .o-auth>button {
+        height: 5vh !important;
+        max-height: 5vh !important;
+    }
+
+    .login>button {
+        height: 5vh !important;
+        max-height: 5vh !important;
+    }
+
+    .djangram {
+        width: 0;
+    }
+
+    .blob {
+        display: none;
+    }
+
+    .logo {
+        top: 8%;
+        left: 43%;
+        position: absolute;
+    }
+
+    .logo-svg {
+        width: 200px;
+        height: 300px;
+    }
+
+    #svgGroup {
+        stroke-width: 0.15mm;
+        fill: #0c056d;
+        stroke: #c44242;
+    }
+
+    .underline {
+        top: 57%;
+        border: 1px solid #0c056d;
+    }
+}
