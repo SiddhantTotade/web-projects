@@ -4,8 +4,8 @@ This is web template repository. Here you will get the web templates generated w
 
 ## Project Images
 
-##### Project Directory Link - https://github.com/SiddhantTotade/web-templates/tree/main/navbar-toggle
-![title](https://github.com/SiddhantTotade/web-templates/blob/main/navbar-toggle/images/navigation-1.png)
+##### Project Directory Link - https://github.com/SiddhantTotade/web-templates/tree/main/changing_content-navigation
+![title](https://github.com/SiddhantTotade/web-templates/blob/main/changing_content-navigation/images/navigation-1.png)
 
 ---
 
