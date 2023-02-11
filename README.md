@@ -4,8 +4,13 @@ This is web template repository. Here you will get the web templates generated w
 
 ## Project Images
 
+##### Project Directory Link - https://github.com/SiddhantTotade/web-templates/tree/main/amazon_clone_web_template
+![title](https://github.com/SiddhantTotade/web-templates/blob/main/amazon_clone_web_template/app_images/amazon_clone-1.png)
+
+---
+
 ##### Project Directory Link - https://github.com/SiddhantTotade/web-templates/tree/main/changing_content-navigation
-![title](https://github.com/SiddhantTotade/web-templates/blob/main/changing_content-navigation/images/navigation-1.png)
+![title](https://github.com/SiddhantTotade/web-templates/blob/main/changing_content-navigation/app_images/navigation-1.png)
 
 ---
 
