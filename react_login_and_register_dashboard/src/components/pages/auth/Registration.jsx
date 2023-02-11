@@ -1,6 +1,6 @@
 import React from 'react'
 import { TextField, Button, Box, Alert } from '@mui/material'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { FormControlLabel, Checkbox } from '@mui/material'
 
@@ -51,7 +51,6 @@ const Registration = () => {
             <Box textAlign='center'>
                 <Button type='submit' sx={{ mt: 3, mb: 2, px: 5 }} variant='contained' >Join</Button>
             </Box>
-            <NavLink to="/" variant="secondary">Forgot Password</NavLink>
             {
                 error.status ? <Alert sx={{ mt: 3 }} severity={error.type}>{error.msg}</Alert> : ""
             }
