@@ -20,6 +20,7 @@ const App = () => {
           <span>-</span>
         </button>
         <input
+          disabled
           name="quantity"
           type="text"
           className="quantity__input"

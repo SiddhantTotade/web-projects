@@ -11,12 +11,16 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.container>h1 {
+  color: rgb(133, 130, 125);
+}
+
 .quantity {
   height: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(93, 92, 92);
   gap: 5px;
   border-radius: 80px;
 }
@@ -24,6 +28,7 @@ body {
 .quantity>input {
   width: 70px;
   height: 5vh;
+  color: rgb(5, 96, 175);
   display: flex;
   text-align: center;
   font-size: xx-large;
@@ -39,4 +44,8 @@ body {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+
+.quantity>button:hover {
+  background-color: rgb(237, 206, 206);
 }
