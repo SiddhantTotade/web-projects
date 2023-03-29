@@ -48,13 +48,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
-    transition: opacity .4s ease, visiblity .4s ease, transform .5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity .4s ease, visiblity .4s ease, transform .5s ease-out;
     visibility: hidden;
     opacity: 1;
     transform: scale(0);
     overflow: hidden;
     z-index: 999;
+    -webkit-transition: .5s;
 }
 
 .model.open {
@@ -82,7 +83,6 @@
     width: 2rem;
     height: 2rem;
     padding: 5px;
-    background: rgba(0, 0, 0, 0.4);
     color: #fff;
     cursor: pointer;
 }
