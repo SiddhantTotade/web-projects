@@ -49,7 +49,7 @@
     justify-content: center;
     align-items: center;
     background-color: #000;
-    transition: opacity 1s ease-in-out, visiblity 1s ease-in-out, transform .5s ease-in-out;
+    transition: opacity .4s ease, visiblity .4s ease, transform .5s ease-in-out;
     visibility: hidden;
     opacity: 0;
     transform: scale(0);

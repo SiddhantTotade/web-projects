@@ -45,6 +45,46 @@ export const Gallery = () => {
             id: 10,
             imgSrc: 'https://images.unsplash.com/photo-1596448594144-c11efc8c98d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJpa2luaSUyMGdpcmx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
         },
+        {
+            id: 11,
+            imgSrc: 'https://images.unsplash.com/photo-1611145434336-2324aa4079cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmlraW5pJTIwbW9kZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+        },
+        {
+            id: 12,
+            imgSrc: 'https://images.unsplash.com/photo-1605248259586-a64eb06b6970?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlraW5pJTIwbW9kZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+        },
+        {
+            id: 13,
+            imgSrc: 'https://images.unsplash.com/photo-1520551149954-41255a5fa237?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXw0ODAzMTYwfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+        },
+        {
+            id: 14,
+            imgSrc: 'https://images.unsplash.com/photo-1610340274015-f0e6f372017d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmlraW5pJTIwZ2lybHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+        },
+        {
+            id: 15,
+            imgSrc: 'https://images.unsplash.com/photo-1531469535976-c6fc3604014f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJpa2luaSUyMGdpcmxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+        },
+        {
+            id: 16,
+            imgSrc: 'https://images.unsplash.com/photo-1570976447640-ac859083963f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGJpa2luaSUyMGdpcmxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+        },
+        {
+            id: 17,
+            imgSrc: 'https://images.unsplash.com/flagged/photo-1553928841-ccac95ad7e72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fGJpa2luaSUyMGdpcmxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+        },
+        {
+            id: 18,
+            imgSrc: 'https://images.unsplash.com/photo-1573718493616-eabe3b8c4adc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ2fHxiaWtpbmklMjBnaXJsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+        },
+        {
+            id: 19,
+            imgSrc: 'https://images.unsplash.com/photo-1628510771171-bf0c7c1bf723?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYyfHxiaWtpbmklMjBnaXJsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+        },
+        {
+            id: 2,
+            imgSrc: 'https://images.unsplash.com/photo-1526784507872-e8ffc369bb77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjM5fHxiaWtpbmklMjBnaXJsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+        }
     ]
 
     const [model, setModel] = useState(false)
@@ -63,7 +103,7 @@ export const Gallery = () => {
             <div className='gallery'>
                 {data.map((item, index) => {
                     return <div className='pics' key={index} onClick={() => getImg(item.imgSrc)}>
-                        <img src={item.imgSrc} alt="" style={{ width: "100%" }} />
+                        <img src={item.imgSrc} alt="" style={{ width: "100%", borderRadius: '5px', border: '2px solid gray' }} />
                     </div>
                 })}
             </div>
