@@ -51,7 +51,7 @@
     background-color: #000;
     transition: opacity .4s ease, visiblity .4s ease, transform .5s ease-in-out;
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     transform: scale(0);
     overflow: hidden;
     z-index: 999;
