@@ -11,7 +11,7 @@ function magnify(product_img, magnified_img) {
 function moveLens(e) {
   let x, y, cx, cy;
   const product_img_rect = product_img.getBoundingClientRect();
-  
+
   x = e.pageX - product_img_rect.left - lens.offsetWidth / 2;
   y = e.pageY - product_img_rect.top - lens.offsetHeight / 2;
 
