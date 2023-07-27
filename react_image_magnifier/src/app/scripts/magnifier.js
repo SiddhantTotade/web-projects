@@ -29,9 +29,9 @@ function moveLens(e) {
   cx = magnified_img.offsetWidth / lens.offsetWidth;
   cy = magnified_img.offsetHeight / lens.offsetHeight;
 
-  magnified_img.style.cssText = `background:url('${product_img.src}') -${
+  magnified_img.style.cssText = `background:url('${product_img.src}') ${
     x * cx
-  }px -${y * cy}px / ${product_img_rect.width * cx}px ${
+  }px ${y * cy}px / ${product_img_rect.width * cx}px ${
     product_img_rect.height * cy
   }px no-repeat`;
 
@@ -42,7 +42,6 @@ function moveLens(e) {
 function leaveLens() {
   lens.classList.remove("active");
   magnified_img.classList.remove("active");
-  lens.style.cssText = "top: 0px; left: 0px;";
 }
 
 magnify(product_img, magnified_img);
