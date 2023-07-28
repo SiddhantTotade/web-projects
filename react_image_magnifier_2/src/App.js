@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import "./App.css";
-import i1 from "./images/AcerNitro-1.webp";
+import ReactImageMagnify from "react-image-magnify";
+
+import i1 from "./images/AcerNitro-1.jpg";
 import i2 from "./images/AcerNitro-2.jpg";
 import i3 from "./images/AcerNitro-3.jpg";
 import i4 from "./images/AcerNitro-4.jpg";
@@ -13,7 +15,7 @@ const App = () => {
 
   const handleHover = (image, i) => {
     setImg(image);
-    imgRef.current[i].classList.add("active");
+    // imgRef.current[i].className += " active";
 
     for (var j = 0; j < images.length; j++) {
       if (i !== j) {
@@ -40,7 +42,8 @@ const App = () => {
               <div
                 ref={addRef}
                 onMouseOver={() => handleHover(image, i)}
-                className={i === 0 ? "img_wrap active" : "img_wrap"}
+                className="img_wrap hover:border-2 hover:border-orange-600"
+                // className={i === 0 ? "img_wrap active" : "img_wrap"}
                 key={i}
               >
                 <img src={image} alt="img" />
@@ -49,7 +52,25 @@ const App = () => {
           })}
         </div>
         <div className="left_2">
-          <img src={img} alt="" />
+          <ReactImageMagnify
+            {...{
+              smallImage: {
+                alt: "img",
+                isFluidWidth: true,
+                src: img,
+              },
+              largeImage: {
+                alt: "img",
+                src: img,
+                width: 850,
+                height: 850,
+              },
+              enlargedImageContainerDimensions: {
+                width: "150%",
+                height: "150%",
+              },
+            }}
+          />
         </div>
       </div>
     </div>
