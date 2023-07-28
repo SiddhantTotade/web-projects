@@ -43,7 +43,6 @@ const App = () => {
                 ref={addRef}
                 onMouseOver={() => handleHover(image, i)}
                 className="img_wrap hover:border-2 hover:border-orange-600"
-                // className={i === 0 ? "img_wrap active" : "img_wrap"}
                 key={i}
               >
                 <img src={image} alt="img" />
