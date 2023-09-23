@@ -9,21 +9,24 @@ import { Listbox, Transition } from "@headlessui/react";
 import { CustomFilterProps } from "@/types";
 import { updateSearchParams } from "@/utils";
 
-const CustomFilter = ({ options, setFilter }: CustomFilterProps<T>) => {
-  const [selected, setSelected] = useState(options[0]);
+export default function CustomFilter<T>({
+  options,
+  setFilter,
+}: CustomFilterProps<T>) {
+  const [menu, setMenu] = useState(options[0]);
 
   return (
     <div className="w-fit">
       <Listbox
-        value={selected}
+        value={menu}
         onChange={(e) => {
-          setSelected(e);
+          setMenu(e);
           setFilter(e.value as unknown as T);
         }}
       >
         <div className="relative w-fit z-10">
           <Listbox.Button className="custom-filter__btn">
-            <span className="block truncate">{selected.title}</span>
+            <span className="block truncate">{menu.title}</span>
             <Image
               src="/chevron-up-down.svg"
               width={20}
@@ -66,6 +69,4 @@ const CustomFilter = ({ options, setFilter }: CustomFilterProps<T>) => {
       </Listbox>
     </div>
   );
-};
-
-export default CustomFilter;
+}

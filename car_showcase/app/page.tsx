@@ -60,19 +60,15 @@ export default function Home() {
         <div className="home__filters">
           <SearchBar setManufacturer={setManufacturer} setModel={setModel} />
           <div className="home__filter-container">
-            <CustomFilter setFilter={setFuel} title="fuel" options={fuels} />
-            <CustomFilter
-              setFilter={setYear}
-              title="year"
-              options={yearsOfProduction}
-            />
+            <CustomFilter setFilter={setFuel} options={fuels} />
+            <CustomFilter setFilter={setYear} options={yearsOfProduction} />
           </div>
         </div>
         {allCars.length > 0 ? (
           <section>
             <div className="home__cars-wrapper">
-              {allCars?.map((car) => (
-                <CarCard key={car} car={car} />
+              {allCars?.map((car, id) => (
+                <CarCard key={id} car={car} />
               ))}
             </div>
             {loading && (
@@ -93,12 +89,14 @@ export default function Home() {
             />
           </section>
         ) : (
-          <div className="home__error-container">
-            <h2 className="text-black text-xl font-bold">
-              Oops..., no results
-            </h2>
-            <p>{allCars?.message}</p>
-          </div>
+          !loading && (
+            <div className="home__error-container">
+              <h2 className="text-black text-xl font-bold">
+                Oops... no results
+              </h2>
+              <p>{allCars?.message}</p>
+            </div>
+          )
         )}
       </div>
     </main>

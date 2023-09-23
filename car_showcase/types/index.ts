@@ -49,11 +49,12 @@ export interface OptionProps {
 }
 
 export interface CustomFilterProps<T> {
-  options: OptionProps;
+  options: OptionProps[];
   setFilter: (selected: T) => void;
 }
 
 export interface ShowMoreProps {
   pageNumber: number;
   isNext: boolean;
+  setLimit: (limit: number) => void;
 }
