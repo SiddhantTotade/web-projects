@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { Navbar, Footer } from "@/components";
 
 export const metadata: Metadata = {
-  title: "Car Hub",
-  description: "Discover cars at Car Hub",
+  title: "CarHub",
+  description: "Discover cars at CarHub",
 };
 
 export default function RootLayout({
