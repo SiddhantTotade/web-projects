@@ -9,9 +9,10 @@ import { CarCard } from "@/components";
 import { fuels, yearsOfProduction } from "@/constants";
 import { ShowMore } from "@/components";
 import { useEffect, useState } from "react";
+import { CarState } from "@/types";
 
 export default function Home() {
-  const [allCars, setAllCars] = useState([]);
+  const [allCars, setAllCars] = useState<CarState>([]);
 
   const [loading, setLoading] = useState(false);
 

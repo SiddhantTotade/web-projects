@@ -10,6 +10,8 @@ export interface CustomButtonProps {
   rightIcon?: string;
 }
 
+export type CarState = CarProps[] & { message?: string };
+
 export interface SearchManufacturerProps {
   selected: string;
   setSelected: (selected: string) => void;
