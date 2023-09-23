@@ -10,7 +10,7 @@ import { fuels, yearsOfProduction } from "@/constants";
 import { ShowMore } from "@/components";
 import { useEffect, useState } from "react";
 
-export default async function Home() {
+export default function Home() {
   const [allCars, setAllCars] = useState([]);
 
   const [loading, setLoading] = useState(false);
@@ -62,7 +62,7 @@ export default async function Home() {
           <div className="home__filter-container">
             <CustomFilter setFilter={setFuel} title="fuel" options={fuels} />
             <CustomFilter
-              setFilter={setFuel}
+              setFilter={setYear}
               title="year"
               options={yearsOfProduction}
             />
@@ -89,7 +89,7 @@ export default async function Home() {
             <ShowMore
               pageNumber={limit / 10}
               isNext={limit > allCars.length}
-              isLimit={setLimit}
+              setLimit={setLimit}
             />
           </section>
         ) : (
