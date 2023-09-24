@@ -1,3 +1,4 @@
+import { CarCard } from "@/components";
 import { MouseEventHandler } from "react";
 
 export interface CustomButtonProps {
@@ -15,6 +16,16 @@ export type CarState = CarProps[] & { message?: string };
 export interface SearchManufacturerProps {
   selected: string;
   setSelected: (selected: string) => void;
+}
+
+export interface CarCardProps {
+  model: string;
+  make: string;
+  mpg: number;
+  transmission: string;
+  year: number;
+  drive: string;
+  cityMpg: number;
 }
 
 export interface CarProps {
