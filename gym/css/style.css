@@ -10,6 +10,57 @@ body {
 
 .hero__image-container {
   width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero__links-container {
+  position: absolute;
+  top: 0;
+}
+
+.hero__links {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.hero__links {
+  list-style-type: none;
+}
+
+.hero__links > li > a {
+  color: #fff;
+  font-size: large;
+  text-decoration: none;
+}
+
+.hero__title-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 100;
+  text-shadow: rgb(181, 181, 181) 1px 0 10px;
+}
+
+.down__arrow {
+  color: #fff;
+  cursor: pointer;
+  animation-name: down__arrow-bounce;
+  animation-timing-function: ease;
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
 }
 
 .hero__image {
@@ -27,7 +78,7 @@ body {
 
 .form__title {
   font-size: x-large;
-  color: rgb(2, 62, 2);
+  color: rgb(66, 66, 66);
 }
 
 .form__container {
@@ -50,7 +101,8 @@ body {
   font-size: medium;
   padding-left: 5px;
   outline: none;
-  border: 2px solid gray;
+  border: 2px solid rgb(66, 66, 66);
+  color: rgb(66, 66, 66);
 }
 
 .btn__container {
@@ -67,10 +119,22 @@ body {
   cursor: pointer;
   font-size: medium;
   color: #fff;
-  background: rgb(171, 170, 170);
+  background: rgb(66, 66, 66);
   border: none;
 }
 
 .btn__container > button:hover {
-  background: rgb(190, 190, 190);
+  background: rgb(52, 52, 52);
+}
+
+@keyframes down__arrow-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
