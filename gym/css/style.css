@@ -156,7 +156,6 @@ body {
 
 .about__image {
   width: 70%;
-  /* border-radius: 10px; */
   border: 2px solid #fff;
   padding: 7px 7px;
 }
@@ -180,26 +179,58 @@ body {
   color: rgb(209, 209, 209);
 }
 
-<<<<<<< HEAD
 .contact__container {
-  border: 2px solid red;
+  height: 50vh;
+  display: flex;
+  align-items: center;
 }
 
 .contact {
-  width: 80%;
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.contact__start-image {
-  width: 80%;
+.electronic__container {
+  width: 30%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
-.contact__end-image {
-  width: 80%;
+.electronic__title {
+  font-size: 30px;
 }
 
-=======
->>>>>>> ab7674d6baba90eaa0e1b8f01c140282a755b2be
+.elec {
+  font-size: 20px;
+}
+
+.location__title {
+  font-size: 30px;
+}
+
+.location__container {
+  width: 30%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 10px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
 @keyframes down__arrow-bounce {
   0% {
     transform: translateY(0);
