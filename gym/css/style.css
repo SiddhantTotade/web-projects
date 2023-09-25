@@ -180,6 +180,7 @@ body {
   color: rgb(209, 209, 209);
 }
 
+<<<<<<< HEAD
 .contact__container {
   border: 2px solid red;
 }
@@ -197,6 +198,8 @@ body {
   width: 80%;
 }
 
+=======
+>>>>>>> ab7674d6baba90eaa0e1b8f01c140282a755b2be
 @keyframes down__arrow-bounce {
   0% {
     transform: translateY(0);
