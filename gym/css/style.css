@@ -205,6 +205,23 @@ body {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
+.title__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reach__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0px;
+}
+
 .contact__container-title {
   font-size: 30px;
   color: rgb(66, 66, 66);
